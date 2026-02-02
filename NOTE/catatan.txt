@@ -1,0 +1,19 @@
+animasi awal loading home page
+slide ganti 5 foto + slide 5 foto kanan kiri
+hero page description change kata + foto
+product description
+highlight/animasi contoh hover + ganti ganti foto
+
+svelt
+
+tampilan detail page 
+tampilan ourservices kanan kiri slide
+tampilan travel moment 3 grid aja
+logo herewego di page
+
+logo ganti fadein logo preloader ke putih
+callback semua detail page
++ page pilihan
+
+ukuran destgrid height -+ 75%
+tulisan di bawah section info ganti setiap gallery ganti
