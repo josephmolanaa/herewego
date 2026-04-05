@@ -1,0 +1,2038 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Jogja Tour - Rental Mobil & Paket Wisata Jogja Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+    <meta name="title" content="Trip Jogja Tour - Rental Mobil & Paket Wisata Jogja Terpercaya">
+    <meta name="description" content="Sewa mobil Jogja dengan harga terjangkau, armada berkualitas, driver profesional, dan paket wisata Jogja lengkap. Nikmati perjalanan nyaman dan aman bersama Trip Jogja Tour.">
+    <meta name="keywords" content="rental mobil Jogja, sewa mobil Jogja, paket wisata Jogja, tour Jogja, rental Hiace Jogja, sewa Innova Jogja, wisata murah Jogja, travel Jogja terpercaya, Trip Jogja Tour, rental mobil lepas kunci Jogja">
+    <meta name="author" content="Trip Jogja Tour">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://tripjogjatour.com/">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tripjogjatour.com/">
+    <meta property="og:title" content="Trip Jogja Tour - Rental Mobil & Paket Wisata Jogja">
+    <meta property="og:description" content="Rental mobil & paket wisata Jogja dengan armada terbaik, sopir profesional, dan layanan 24 jam. Pesan sekarang untuk perjalanan nyaman dan menyenangkan.">
+    <meta property="og:image" content="og.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tripjogjatour.com/">
+    <meta name="twitter:title" content="Trip Jogja Tour - Rental Mobil & Paket Wisata Jogja">
+    <meta name="twitter:description" content="Nikmati liburan di Jogja dengan paket wisata dan rental mobil terbaik. Booking mudah, harga bersahabat.">
+    <meta name="twitter:image" content="og.jpg">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Trip Jogja Tour",
+      "url": "https://tripjogjatour.com/",
+      "logo": "https://tripjogjatour.com//logo.png",
+      "image": "https://tripjogjatour.com//og.jpg",
+      "description": "Trip Jogja Tour adalah penyedia jasa rental mobil & paket wisata terpercaya di Yogyakarta.",
+      "telephone": "+6282322094246",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maredan RT 01/39 No 15, Sendang Tirto, Berbah, Sleman, Yogyakarta",
+        "addressLocality": "Yogyakarta",
+        "addressCountry": "ID"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "areaServed": "Yogyakarta",
+      "priceRange": "Rp250.000 - Rp1.500.000",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Rental Mobil Innova",
+          "price": "700000",
+          "priceCurrency": "IDR",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Paket Wisata Jogja 1 Hari",
+          "price": "500000",
+          "priceCurrency": "IDR",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Prompt", sans-serif;
+        }
+        @media (min-width: 768px) {
+            .navbar .md\:flex a {
+                text-transform: uppercase;
+                letter-spacing: .03em;
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+            }
+        }
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        .navbar-scrolled {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown-menu {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .dropdown-menu.show {
+            max-height: 500px;
+        }
+        .banner-slide {
+            transition: opacity 1s ease-in-out;
+        }
+        .banner-slide.active {
+            opacity: 1;
+        }
+        .banner-slide:not(.active) {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .floating-btn {
+            transition: all 0.3s ease;
+        }
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+        .prompt-thin { font-family: "Prompt", sans-serif; font-weight: 100; font-style: normal; }
+        .prompt-extralight { font-family: "Prompt", sans-serif; font-weight: 200; font-style: normal; }
+        .prompt-light { font-family: "Prompt", sans-serif; font-weight: 300; font-style: normal; }
+        .prompt-regular { font-family: "Prompt", sans-serif; font-weight: 400; font-style: normal; }
+        .prompt-medium { font-family: "Prompt", sans-serif; font-weight: 500; font-style: normal; }
+        .prompt-semibold { font-family: "Prompt", sans-serif; font-weight: 600; font-style: normal; }
+        .prompt-bold { font-family: "Prompt", sans-serif; font-weight: 700; font-style: normal; }
+        .prompt-extrabold { font-family: "Prompt", sans-serif; font-weight: 800; font-style: normal; }
+        .prompt-black { font-family: "Prompt", sans-serif; font-weight: 900; font-style: normal; }
+        .prompt-thin-italic { font-family: "Prompt", sans-serif; font-weight: 100; font-style: italic; }
+        .prompt-extralight-italic { font-family: "Prompt", sans-serif; font-weight: 200; font-style: italic; }
+        .prompt-light-italic { font-family: "Prompt", sans-serif; font-weight: 300; font-style: italic; }
+        .prompt-regular-italic { font-family: "Prompt", sans-serif; font-weight: 400; font-style: italic; }
+        .prompt-medium-italic { font-family: "Prompt", sans-serif; font-weight: 500; font-style: italic; }
+        .prompt-semibold-italic { font-family: "Prompt", sans-serif; font-weight: 600; font-style: italic; }
+        .prompt-bold-italic { font-family: "Prompt", sans-serif; font-weight: 700; font-style: italic; }
+        .prompt-extrabold-italic { font-family: "Prompt", sans-serif; font-weight: 800; font-style: italic; }
+        .prompt-black-italic { font-family: "Prompt", sans-serif; font-weight: 900; font-style: italic; }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <nav class="navbar fixed top-0 left-0 right-0 bg-white z-50 h-[80px] py-4 px-6 md:px-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold text-[#015244] flex items-center">
+                    <img src="logo.png" class="h-12" alt="">
+                    Trip Jogja Tour
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="text-black font-bold hover:text-[#013a2f] font-medium">Home</a>
+                <a href="#about" class="text-black font-bold hover:text-[#013a2f] font-medium">Tentang Kami</a>
+                <a href="#cars" class="text-black font-bold hover:text-[#013a2f] font-medium">Sewa Mobil</a>
+                <a href="#packages" class="text-black font-bold hover:text-[#013a2f] font-medium">Paket Wisata</a>
+                <a href="#cta" class="text-black font-bold hover:text-[#013a2f] font-medium">Kontak</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-black font-bold focus:outline-none">
+                <i data-feather="menu" id="menu-icon"></i>
+            </button>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu md:hidden bg-white mt-2 rounded-lg shadow-lg">
+            <div class="px-4 py-2 space-y-3">
+                <a href="/" class="block py-2 text-black font-bold hover:text-[#013a2f] font-medium">Home</a>
+                <a href="#about" class="block py-2 text-black font-bold hover:text-[#013a2f] font-medium">Tentang Kami</a>
+                <a href="#cars" class="block py-2 text-black font-bold hover:text-[#013a2f] font-medium">Sewa Mobil</a>
+                <a href="#packages" class="block py-2 text-black font-bold hover:text-[#013a2f] font-medium">Paket Wisata</a>
+                <a href="#cta" class="block py-2 text-black font-bold hover:text-[#013a2f] font-medium">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen pt-16 overflow-hidden">
+        <div class="relative h-full">
+            <div class="banner-slide active h-full w-full bg-cover bg-center flex items-center" style="background-image: url('assets/img/sliders/1.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="container mx-auto px-6 md:px-12 relative z-10 text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-on-scroll">Explore Jogja dengan Nyaman</h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl animate-on-scroll" style="transition-delay: 0.2s">Rental mobil terbaik di Jogja dengan harga terjangkau dan pelayanan prima.</p>
+                    <a href="#cars" class="bg-[#015244] hover:bg-[#013a2f] text-white font-bold py-3 px-8 rounded-full inline-block animate-on-scroll" style="transition-delay: 0.4s">Sewa Sekarang</a>
+                </div>
+            </div>
+            <div class="banner-slide h-full w-full bg-cover bg-center flex items-center" style="background-image: url('assets/img/sliders/2.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="container mx-auto px-6 md:px-12 relative z-10 text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Paket Wisata Menarik</h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl">Temukan pengalaman liburan tak terlupakan di Jogja dengan paket wisata kami.</p>
+                    <a href="#packages" class="bg-[#015244] hover:bg-[#013a2f] text-white font-bold py-3 px-8 rounded-full inline-block">Lihat Paket</a>
+                </div>
+            </div>
+            <div class="banner-slide h-full w-full bg-cover bg-center flex items-center" style="background-image: url('assets/img/sliders/3.jpg');">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="container mx-auto px-6 md:px-12 relative z-10 text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Layanan 24 Jam</h1>
+                    <p class="text-xl md:text-2xl mb-8 max-w-2xl">Kami siap melayani Anda kapan saja dengan armada terbaik dan sopir profesional.</p>
+                    <a href="#contact" class="bg-[#015244] hover:bg-[#013a2f] text-white font-bold py-3 px-8 rounded-full inline-block">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-10">
+            <button class="banner-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 focus:outline-none active"></button>
+            <button class="banner-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 focus:outline-none"></button>
+            <button class="banner-indicator w-3 h-3 rounded-full bg-white bg-opacity-50 focus:outline-none"></button>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10 animate-on-scroll">
+                    <img src="hero.jpeg" alt="About Trip Jogja Tour" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 animate-on-scroll" style="transition-delay: 0.2s">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#015244] mb-6">Tentang Kami</h2>
+                    <p class="text-gray-600 mb-4">Trip Jogja Tour adalah penyedia jasa rental mobil dan paket wisata terpercaya di Yogyakarta sejak 2010. Kami berkomitmen untuk memberikan pengalaman berwisata yang nyaman dan menyenangkan bagi setiap pelanggan.</p>
+                    <p class="text-gray-600 mb-6">Dengan armada yang terawat dan sopir yang berpengalaman, kami siap mengantarkan Anda menjelajahi keindahan Jogja dan sekitarnya dengan aman dan nyaman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#015244] mb-4">Mengapa Memilih Kami?</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Kami memberikan pelayanan terbaik dengan berbagai keunggulan yang membuat perjalanan Anda nyaman, aman, dan berkesan.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-on-scroll">
+        <div class="text-[#015244] mb-4">
+          <i data-feather="shield" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#015244] mb-3">Armada Berkualitas</h3>
+        <p class="text-gray-600">
+          Kendaraan kami selalu dalam kondisi prima dengan perawatan rutin, kebersihan terjaga, dan fitur keselamatan lengkap untuk kenyamanan perjalanan Anda.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-on-scroll" style="transition-delay: 0.2s">
+        <div class="text-[#015244] mb-4">
+          <i data-feather="thumbs-up" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#015244] mb-3">Pelayanan Prima</h3>
+        <p class="text-gray-600">
+          Tim kami siap melayani dengan ramah, profesional, dan responsif untuk memastikan pengalaman perjalanan Anda berjalan lancar tanpa hambatan.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-on-scroll" style="transition-delay: 0.4s">
+        <div class="text-[#015244] mb-4">
+          <i data-feather="dollar-sign" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#015244] mb-3">Tarif Terjangkau</h3>
+        <p class="text-gray-600">
+          Nikmati harga yang kompetitif dan transparan, tanpa biaya tersembunyi, dengan kualitas layanan terbaik di kelasnya.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 animate-on-scroll" style="transition-delay: 0.6s">
+        <div class="text-[#015244] mb-4">
+          <i data-feather="headphones" class="w-10 h-10"></i>
+        </div>
+        <h3 class="text-xl font-bold text-[#015244] mb-3">Layanan Pelanggan 24 Jam</h3>
+        <p class="text-gray-600">
+          Customer service kami selalu siap membantu kapan pun Anda butuhkan, 24 jam sehari, 7 hari seminggu.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cars" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 md:px-24">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#015244] mb-4">Armada Kami</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai kendaraan berkualitas dengan sopir profesional. Pilih dari Avanza, Xenia, Hiace, hingga Elf sesuai kebutuhan Anda</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+          <div class="animate-on-scroll"
+               data-car-index="1"
+               style="position:relative; ">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">14</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/hiace_commuter.png" alt="Hiace Commuter"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">HIACE COMMUTER</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.200.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.100.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Hiace%20Commuter"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="2"
+               style="position:relative; transition-delay:.15s;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">14</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/hiace_premio.png" alt="Hiace Premio"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">HIACE PREMIO</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Hanya 24 jam: center -->
+                    <div class="col-span-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.400.000</div>
+                    </div>
+                    <div class="pl-2 hidden">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">-</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Hiace%20Premio"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="3"
+               style="position:relative; transition-delay:.25s;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">8</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/hiace_premio.png" alt="Hiace Premio Luxury"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">HIACE PREMIO LUXURY</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 2.700.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 2.500.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Hiace%20Premio%20Luxury"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="4"
+               style="position:relative; transition-delay:.35s;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">6</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/avanza.png" alt="Toyota Avanza"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">TOYOTA AVANZA</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 600.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 550.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Toyota%20Avanza"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="5"
+               style="position:relative; transition-delay:.45s;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">6</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/avanza_fwd.png" alt="Toyota Avanza FWD"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">TOYOTA AVANZA FWD</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 650.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 600.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Toyota%20Avanza%20FWD"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="6"
+               style="position:relative; transition-delay:.55s;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">7</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/innova_reborn.png" alt="Innova Reborn"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">INNOVA REBORN</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 750.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 700.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20Innova%20Reborn"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="7"
+               style="position:relative; transition-delay:.65s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">18</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/1.png" alt="ELF LONG"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">ELF LONG</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.600.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.500.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20ELF%20LONG"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="8"
+               style="position:relative; transition-delay:.75s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">5</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/2.png" alt="FORTUNER"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">FORTUNER</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.750.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.650.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20FORTUNER"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="9"
+               style="position:relative; transition-delay:.85s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">5</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/3.png" alt="PAJERO"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">PAJERO</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.750.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.650.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20PAJERO"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="10"
+               style="position:relative; transition-delay:.95s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">5</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/4.png" alt="ALPHARD"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">ALPHARD</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 3.800.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 3.300.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20ALPHARD"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="11"
+               style="position:relative; transition-delay:.105s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">33</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/5.png" alt="BUS JOGJA"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">BUS JOGJA</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Hanya 24 jam: center -->
+                    <div class="col-span-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 2.300.000</div>
+                    </div>
+                    <div class="pl-2 hidden">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">-</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Kapasitas Hinga 35 Penumpang</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20BUS%20JOGJA"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  
+          <div class="animate-on-scroll"
+               data-car-index="12"
+               style="position:relative; transition-delay:.115s;display:none;">
+            <div
+              style="position:absolute; top:-12px; right:-12px; background:#0ea76a; color:#fff; width:50px; height:50px; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.15); z-index:2;">
+              <i class="fa-solid fa-user" style="font-size:14px; line-height:1;"></i>
+              <span style="font-weight:700; line-height:1; font-size:12px; margin-top:2px;">7</span>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover cursor-pointer">
+              <img src="assets/img/cars/6.png" alt="INNOVA ZENIX"
+                   style="width:100%; aspect-ratio:665/500; object-fit:cover;">
+              <div class="p-6">
+                <h3 class="text-center text-xl font-bold text-[#015244]">INNOVA ZENIX</h3>
+
+                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                      <!-- Punya 24h & 12h -->
+                    <div class="border-r border-gray-200 pr-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="24.png" alt="24 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>24 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.200.000</div>
+                    </div>
+                    <div class="pl-2">
+                      <div class="flex items-center justify-center text-gray-600 text-sm">
+                        <img src="12.png" alt="12 Jam" style="width:18px;height:18px; margin-right:8px;">
+                        <!-- <span>12 Jam</span> -->
+                      </div>
+                      <div class="mt-2 text-[#015244] font-bold text-lg">Rp 1.100.000</div>
+                    </div>
+                                  </div>
+
+                <div class="mt-6 flex items-center justify-center text-gray-700">
+                  <img src="benefit.png" alt="Benefit" style="width:20px;height:20px; margin-right:8px;">
+                  <span>Unit, Driver, dan BBM</span>
+                </div>
+
+                <div class="mt-6 flex justify-center">
+                  <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20ingin%20menyewa%20mobil%20INNOVA%20ZENIX"
+                     class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                     style="background-color:#0ea76a;">
+                    <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i> Pesan
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  </div>
+
+    <div class="text-center mt-12 animate-on-scroll">
+      <a href="#"
+         id="showAllCarsBtn"
+                  class="inline-block border-2 border-[#015244] text-[#015244] hover:bg-[#015244] hover:text-white font-bold py-3 px-8 rounded-full transition-all duration-300">Lihat Semua Armada</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var btn = document.getElementById('showAllCarsBtn');
+    if (!btn) return;
+
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var hiddenCards = document.querySelectorAll('[data-car-index]');
+      hiddenCards.forEach(function (el) {
+        var idx = parseInt(el.getAttribute('data-car-index'), 10) || 0;
+        if (idx > 6) {
+          el.style.display = '';
+        }
+      });
+      btn.style.display = 'none';
+    }, { passive: false });
+  })();
+</script>
+
+
+
+
+<section id="packages" class="py-20 bg-white">
+  <div class="container mx-auto px-6 md:px-24">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#015244] mb-4">Paket Wisata</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Liburan menyenangkan bersama keluarga dengan paket kami</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="1"
+               >
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/1.png" alt="Paket Tour Jogja 1"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 1              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Borobudur</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Merapi Lava Tour / Bhumi Merapi</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Prambanan</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tebing Breksi / Obelix Hills</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%201"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="2"
+               style="transition-delay:.02s;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/2.png" alt="Paket Tour Jogja 2"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 2              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tol Khayangan</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Air Terjun Kedung Khayang</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>VW Tour Borobudur</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 650.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%202"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="3"
+               style="transition-delay:.04s;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/3.png" alt="Paket Tour Jogja 3"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 3              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Jeep Offroad Pindul</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Cave Goa Pindul dan Sungai Oyo</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pinus Pengger / Heha Sky View</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Obelix Hills</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%203"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="4"
+               style="transition-delay:.06s;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/4.png" alt="Paket Tour Jogja 4"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 4              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Puncak Segoro</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Heha Ocean View / Teras Kaca</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Bukit Paralayang / Obelix Sea View</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Adventure Jeep Gumuk Pasir</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%204"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="5"
+               style="transition-delay:.08s;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/5.png" alt="Paket Tour Jogja 5"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 5              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Candi Prambanan</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tebing Breksi / Candi Ijo</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Obelix Hills</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Heha Sky View / Pinus Pengger</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%205"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="6"
+               style="transition-delay:.10s;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/6.png" alt="Paket Tour Jogja 6"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 6              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Goa Pindul</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pantai Timang / Pantai Drini</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pinus Pengger</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Heha Sky View</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%206"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="7"
+               style="transition-delay:.12s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/7.png" alt="Paket Tour Jogja 7"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 7              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sunrise Bukit Panguk Kediwung / Kebun Buah Mangunan</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Hutan Pinus Mangunan</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Goa Pindul</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pantai Timang</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%207"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="8"
+               style="transition-delay:.14s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/8.png" alt="Paket Tour Jogja 8"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 8              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Nepal Van Java</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>SukoMakmur</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>VW Tour Borobudur</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 700.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%208"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="9"
+               style="transition-delay:.16s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/9.png" alt="Paket Tour Jogja 9"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 9              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>VW Tour Borobudur / Svarga Bhumi</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tumpeng Menoreh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Geblek Menoreh View / Gamplong Studio</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Malioboro</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%209"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="10"
+               style="transition-delay:.18s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/10.png" alt="Paket Tour Jogja 10"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 10              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Kraton Yogyakarta</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Taman Sari</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Adventure Jeep Gumuk Pasir</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Obelix Sea View</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Bukit Paralayang</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%2010"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="11"
+               style="transition-delay:.20s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/11.png" alt="Paket Tour Jogja 11"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja 11              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Kali Biru / Pule Payung</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Mahaloka Paradise / Geblek Menoreh View</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Lalisa / Studio Gamplong</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Malioboro</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Shopping Oleh-oleh</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 600.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%2011"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="12"
+               style="transition-delay:.22s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/12.png" alt="Paket Tour Jogja Suka Suka"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Jogja Suka Suka              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tentukan Sendiri tujuan wisatamu</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tentukan Sendiri tujuan wisatamu</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Tentukan Sendiri tujuan wisatamu</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sudah Termasuk Mobil - Sopir - BBM</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 700.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Jogja%20Suka%20Suka"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="13"
+               style="transition-delay:.24s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/13.png" alt="Paket Tour Dieng Sunrise"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Dieng Sunrise              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Sunrise Si Kunir / Batu Angkruk</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Bukit Ratapan Angin / Telaga Warna</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Kawah Si Kidang</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Komplek Candi Arjuna</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Start dari Jogja Jam 23.00</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 1.500.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Dieng%20Sunrise"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="14"
+               style="transition-delay:.26s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/14.png" alt="Paket Tour Dieng"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Dieng              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Bukit Ratapan Angin / Telaga Warna</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Kawah Si Kidang</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Komplek Candi Arjuna</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Gardu Pandang Batu Angkruk</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Start Dari Jogja Pukul 05.00</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 1.200.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Dieng"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 card-hover animate-on-scroll cursor-pointer h-full flex flex-col"
+               data-tour-index="15"
+               style="transition-delay:.28s;display:none;">
+            <div style="background:#f3f6f6;">
+                            <img src="assets/img/tours/15.png" alt="Paket Tour Pacitan"
+                   style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+            </div>
+
+            <div class="p-6 flex flex-col flex-1">
+              <h3 class="text-center text-xl font-bold text-[#015244] mb-4">
+                Paket Tour Pacitan              </h3>
+
+              <ul class="space-y-3 mb-6" style="list-style:none; padding:0;">
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Susur Sungai Maron</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pantai Watu Karung</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Pantai Kasap (Raja Ampatnya pacitan)</span>
+                  </li>
+                                  <li class="flex items-start text-gray-700">
+                    <i class="fa-solid fa-circle-check" style="color:#16a34a; margin-right:10px; font-size:12px; margin-top:2px;"></i>
+                    <span>Start dari Jogja Jam 05.00</span>
+                  </li>
+                              </ul>
+
+              <div class="text-center mb-6 mt-auto">
+                <div class="text-2xl font-bold text-[#015244]">
+                  Rp 1.200.000                  <span class="text-gray-500 text-base">/ Mobil</span>
+                </div>
+              </div>
+
+                            <div class="flex justify-center">
+                <a href="https://wa.me/6282322094246?text=Halo%20kak%2C%20saya%20tertarik%20dengan%20paket%20Paket%20Tour%20Pacitan"
+                   class="inline-flex items-center text-white font-semibold rounded-full px-6 py-3 shadow"
+                   style="background-color:#0ea76a;">
+                  <i class="fa-brands fa-whatsapp" style="font-size:18px; margin-right:8px;"></i>
+                  Pesan Sekarang
+                </a>
+              </div>
+            </div>
+          </div>
+                  </div>
+
+    <div class="text-center mt-12 animate-on-scroll">
+      <a href="#"
+         id="showAllToursBtn"
+                  class="inline-block border-2 border-[#015244] text-[#015244] hover:bg-[#015244] hover:text-white font-bold py-3 px-8 rounded-full transition-all duration-300">
+         Lihat Semua Paket
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var btn = document.getElementById('showAllToursBtn');
+    if (!btn) return;
+
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var cards = document.querySelectorAll('[data-tour-index]');
+      cards.forEach(function (el) {
+        var idx = parseInt(el.getAttribute('data-tour-index'), 10) || 0;
+        if (idx > 6) {
+          el.style.display = '';
+        }
+      });
+      // sembunyikan tombol setelah semua tampil
+      btn.style.display = 'none';
+    }, { passive: false });
+  })();
+</script>
+
+
+
+    <section id="cta" class="py-20 bg-cover bg-center relative" style="background-image: url('cta.jpeg');">
+        <div class="absolute inset-0 bg-[#015244] bg-opacity-80"></div>
+        <div class="container mx-auto px-6 md:px-12 relative z-10 text-white text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">Siap Berpetualang di Jogja?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto animate-on-scroll" style="transition-delay: 0.2s">Hubungi kami sekarang untuk pemesanan atau informasi lebih lanjut tentang layanan kami.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-on-scroll" style="transition-delay: 0.4s">
+                <a href="https://wa.me/6282322094246" class="bg-white hover:bg-gray-100 text-[#015244] font-bold py-3 px-8 rounded-full inline-block">Chat WhatsApp</a>
+                <a href="tel:+6282322094246" class="border-2 border-white hover:bg-white hover:text-[#015244] font-bold py-3 px-8 rounded-full inline-block">Telepon Kami</a>
+            </div>
+        </div>
+    </section>
+
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="text-center mb-16 animate-on-scroll">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#015244] mb-4">Apa Kata Mereka?</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari pelanggan yang telah menggunakan layanan kami.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                  <div class="bg-white p-8 rounded-lg shadow-sm animate-on-scroll" >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                              </div>
+            </div>
+
+            <p class="text-gray-600 mb-6">"Pelayanan sangat memuaskan! Mobil bersih dan sopirnya ramah serta berpengalaman. Pasti akan menggunakan jasa Trip Jogja Tour lagi."</p>
+
+            <div class="flex items-center">
+              <img src="assets/img/testimonials/1.jpg"
+                   alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+              <div>
+                <h4 class="font-bold text-[#015244]">Budi Santoso</h4>
+                <p class="text-gray-500 text-sm">Jakarta</p>
+              </div>
+            </div>
+          </div>
+                            <div class="bg-white p-8 rounded-lg shadow-sm animate-on-scroll" style="transition-delay: 0.2s">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                              </div>
+            </div>
+
+            <p class="text-gray-600 mb-6">"Paket wisatanya sangat worth it! Destinasi yang dikunjungi menarik dan guide-nya sangat informatif. Terima kasih Trip Jogja Tour!"</p>
+
+            <div class="flex items-center">
+              <img src="assets/img/testimonials/2.jpg"
+                   alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+              <div>
+                <h4 class="font-bold text-[#015244]">Anita Rahayu</h4>
+                <p class="text-gray-500 text-sm">Bandung</p>
+              </div>
+            </div>
+          </div>
+                            <div class="bg-white p-8 rounded-lg shadow-sm animate-on-scroll" style="transition-delay: 0.4s">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                                    <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                              </div>
+            </div>
+
+            <p class="text-gray-600 mb-6">"Proses sewa mobil sangat mudah dan cepat. Mobilnya nyaman dan kondisi sangat baik. Recommended untuk liburan di Jogja."</p>
+
+            <div class="flex items-center">
+              <img src="assets/img/testimonials/3.jpg"
+                   alt="Customer" class="w-12 h-12 rounded-full mr-4 object-cover">
+              <div>
+                <h4 class="font-bold text-[#015244]">Dewi Kurnia</h4>
+                <p class="text-gray-500 text-sm">Surabaya</p>
+              </div>
+            </div>
+          </div>
+                  </div>
+  </div>
+</section>
+
+
+<footer class="bg-[#015244] text-white py-12">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center mb-4">
+          <img src="logo.png" alt="Logo" style="width:48px; height:auto; margin-right:10px;">
+          <h3 class="text-xl font-bold">Trip Jogja Tour</h3>
+        </div>
+        <div style="height:2px; background-color:rgba(255,255,255,0.4);" class="mb-4"></div>
+        <p class="text-gray-200 leading-relaxed text-sm">
+          Penyedia jasa rental mobil & paket wisata terpercaya di Yogyakarta. 
+          Armada terbaik, driver profesional, dan pelayanan ramah untuk pengalaman liburan tak terlupakan.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Menu</h3>
+        <div style="height:2px; background-color:rgba(255,255,255,0.4);" class="mb-4"></div>
+        <ul class="space-y-2 text-gray-200 text-sm">
+          <li><a href="#home" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">Tentang Kami</a></li>
+          <li><a href="#cars" class="hover:text-white transition">Sewa Mobil</a></li>
+          <li><a href="#packages" class="hover:text-white transition">Paket Wisata</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-4">Alamat & Kontak</h3>
+        <div style="height:2px; background-color:rgba(255,255,255,0.4);" class="mb-4"></div>
+        <ul class="space-y-4 text-gray-200 text-sm">
+          <li class="flex items-start">
+            <i class="fa-solid fa-location-dot mr-3 mt-1"></i>
+            <span>Maredan RT 01/39 No 15, Sendang Tirto, Berbah, Sleman, Yogyakarta</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fa-solid fa-phone mr-3 mt-1"></i>
+            <span>(0274) 1234567</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fa-brands fa-whatsapp mr-3 mt-1 text-green-300"></i>
+            <a href="https://wa.me/6282322094246" class="hover:text-white transition">+62 823-2209-4246 (WhatsApp)</a>
+          </li>
+          <li class="flex space-x-4 items-center mt-2">
+            <a href="#" class="hover:text-white text-gray-300 transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white text-gray-300 transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-white text-gray-300 transition"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-600 mt-12 pt-8 text-center text-gray-300 text-xs tracking-wide">
+      <p>
+        &copy; 2025 Trip Jogja Tour. All Rights Reserved. 
+        <span class="block md:inline mt-2 md:mt-0">
+          Made by 
+          <a href="https://densucode.com" target="_blank" class="text-white font-semibold hover:underline">
+            Densucode
+          </a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <a href="https://wa.me/6282322094246" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg floating-btn z-50">
+        <i data-feather="message-circle" class="w-6 h-6"></i>
+    </a>
+
+    <button id="back-to-top" class="fixed bottom-6 right-24 bg-[#015244] hover:bg-[#013a2f] text-white p-4 rounded-full shadow-lg floating-btn z-50 hidden">
+        <i data-feather="arrow-up" class="w-6 h-6"></i>
+    </button>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+            if (dropdownMenu.classList.contains('show')) {
+                menuIcon.setAttribute('data-feather', 'x');
+            } else {
+                menuIcon.setAttribute('data-feather', 'menu');
+            }
+            feather.replace();
+        });
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.banner-slide');
+        const indicators = document.querySelectorAll('.banner-indicator');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+            
+            indicators.forEach((indicator, i) => {
+                if (i === index) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        setInterval(nextSlide, 5000);
+        
+        indicators.forEach((indicator, i) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+            
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    if (dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                        menuIcon.setAttribute('data-feather', 'menu');
+                        feather.replace();
+                    }
+                }
+            });
+        });
+
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+        
+        animateOnScroll();
+        window.addEventListener('scroll', animateOnScroll);
+        feather.replace();
+    </script>
+</body>
+</html>

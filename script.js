@@ -48,14 +48,14 @@ function changeHeroSlide() {
 setInterval(changeHeroSlide, 7000);
 
 // PRELOADER / LOADING SCREEN
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     const preloader = document.querySelector(".preloader");
     const body = document.body;
 
     setTimeout(() => {
-        preloader.classList.add("hidden");
-        body.classList.add("loaded");
-    }, 2500); // Ubah ke 5500 kalau mau lebih lama lagi
+        if(preloader) preloader.classList.add("hidden");
+        if(body) body.classList.add("loaded");
+    }, 1000); // reduced timeout for better UX
 });
 
 // HERO SLIDESHOW - AUTO + MANUAL ARROW
@@ -203,3 +203,102 @@ function resetAutoTimer() {
     autoSlideInterval = setInterval(nextSlide, 7000);
 }
 
+// GALLERY SCROLL ARROWS (DESKTOP)
+const galleryGrid = document.getElementById("galleryGrid");
+const btnLeftGallery = document.querySelector(".gallery-left");
+const btnRightGallery = document.querySelector(".gallery-right");
+
+if (galleryGrid && btnLeftGallery && btnRightGallery) {
+    btnLeftGallery.addEventListener("click", () => {
+        // Angka 320 didapat dari estimasi lebar img + gap
+        galleryGrid.scrollBy({ left: -320, behavior: "smooth" });
+    });
+    btnRightGallery.addEventListener("click", () => {
+        galleryGrid.scrollBy({ left: 320, behavior: "smooth" });
+    });
+}
+
+// WHY US - VIEW ALL TOGGLE
+function toggleWhyUs() {
+    const hiddenItem  = document.querySelector('.hidden-feature');
+    const btn         = document.getElementById('whyusViewAll');
+    const btnText     = document.getElementById('whyusViewAllText');
+    const grid        = document.querySelector('.features-grid');
+
+    const isOpen = hiddenItem.classList.contains('show');
+
+    if (isOpen) {
+        // Close: hide the 4th item
+        hiddenItem.classList.remove('show');
+        // Wait for fade-out before display:none
+        setTimeout(() => {
+            hiddenItem.style.display = 'none';
+            grid.classList.remove('expanded');
+        }, 400);
+        btn.classList.remove('open');
+        btnText.textContent = 'View All';
+    } else {
+        // Open: show the 4th item
+        hiddenItem.style.display = 'block';
+        grid.classList.add('expanded');
+        // Trigger reflow so transition fires
+        requestAnimationFrame(() => {
+            hiddenItem.classList.add('show');
+            // Re-observe for fade-in animation
+            observer.observe(hiddenItem);
+        });
+        btn.classList.add('open');
+        btnText.textContent = 'Tutup';
+    }
+}
+
+// TESTIMONIAL SLIDER
+(function() {
+    const cards  = document.querySelectorAll('.testi-card');
+    const dotsWrap = document.getElementById('testiDots');
+    let current = 0;
+    let autoTimer;
+
+    if (!cards.length || !dotsWrap) return;
+
+    // Build dots
+    cards.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'testi-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Testimonial ' + (i + 1));
+        d.addEventListener('click', () => goTesti(i));
+        dotsWrap.appendChild(d);
+    });
+
+    // Show initial card
+    cards[0].classList.add('active');
+
+    function goTesti(index) {
+        cards[current].classList.remove('active');
+        dotsWrap.querySelectorAll('.testi-dot')[current].classList.remove('active');
+        current = (index + cards.length) % cards.length;
+        cards[current].classList.add('active');
+        dotsWrap.querySelectorAll('.testi-dot')[current].classList.add('active');
+        resetAutoPlay();
+    }
+
+    // Expose to global scope for onclick handlers
+    window.prevTesti = () => goTesti(current - 1);
+    window.nextTesti = () => goTesti(current + 1);
+
+    // Auto-play every 5s
+    function startAutoPlay() {
+        autoTimer = setInterval(() => goTesti(current + 1), 5000);
+    }
+    function resetAutoPlay() {
+        clearInterval(autoTimer);
+        startAutoPlay();
+    }
+    startAutoPlay();
+
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft')  window.prevTesti();
+        if (e.key === 'ArrowRight') window.nextTesti();
+    });
+})();

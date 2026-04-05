@@ -1,145 +1,876 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="IMAGES/LOGO WHITE PNG.png" type="image/png">
     <title>HereWego</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17441" rel="stylesheet"/>
-    <link href="https://fonts.cdnfonts.com/css/gc-palioka" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17441" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/gc-palioka" rel="stylesheet" />
+    <script src="i18n.js"></script>
 </head>
+
 <body>
     <!-- PRELOADER/ LOADING SCREEN-->
     <div class=" preloader">
         <div class="loader">
             <img src="IMAGES/LOGO NAVYBLUE PNG.png" class="logo-breath" alt="HereWeGo Logo">
         </div>
-    </div>    
-    
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                 <a href="#hero" class="logo-link"> 
+                <a href="#hero" class="logo-link">
                     <img src="IMAGES/LOGO TYPOGRP 1.png" class="logo-navbar" alt="HereWeGo Logo">
-                </a> 
+                </a>
             </div>
         </div>
 
-            <button class="hamburger" aria-label="Toggle menu">
-                <span class="bar"></span> 
-                <span class="bar"></span> 
-                <span class="bar"></span> 
-            </button>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#destinations">Our Services</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#info">Info</a></li>
-            </ul>
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#destinations">Our Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#info">Info</a></li>
+        </ul>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-   <section id="hero" class="hero">
-    <div class="hero-slideshow">
-        <img src="IMAGES/unnamed.jpg" class="hero-slide active">
-        <img src="IMAGES/unnamed (1).jpg" class="hero-slide">
-        <img src="IMAGES/unnamed (2).jpg" class="hero-slide">
-    </div>
+    <section id="hero" class="hero">
 
-        <button class="hero-arrow left-arrow">&lt;</button>
-        <button class="hero-arrow right-arrow">&gt;</button>
+        <!-- Desktop Video Background (Disembunyikan di Mobile) -->
+        <video class="hero-video desktop-video" autoplay loop muted playsinline>
+            <!-- Nanti src ini diubah dengan video yang sudah di-compress -->
+            <source src="IMAGES/hero-video.mp4" type="video/mp4">
+        </video>
 
-    <div class="hero-content">
-        <h1>Explore The Hidden Beauty</h1>
-        <p>Discover forests, coastlines, waterfalls and unforgettable experiences.</p>
-        <div class="hero-dots"></div>
-    </div>
+        <!-- Slideshow Gambar (Khusus Mobile) -->
+        <div class="hero-slideshow mobile-slideshow">
+            <img src="IMAGES/unnamed.jpg" class="hero-slide active">
+            <img src="IMAGES/unnamed (1).jpg" class="hero-slide">
+            <img src="IMAGES/unnamed (2).jpg" class="hero-slide">
+        </div>
+
+        <button class="hero-arrow left-arrow mobile-slideshow">&lt;</button>
+        <button class="hero-arrow right-arrow mobile-slideshow">&gt;</button>
+
+        <div class="hero-content">
+            <h1>Explore The Hidden Beauty</h1>
+            <p>Discover forests, coastlines, waterfalls and unforgettable experiences.</p>
+            <div class="hero-dots mobile-slideshow"></div>
+        </div>
     </section>
 
     <!-- DESTINATIONS -->
     <section id="destinations" class="destinations">
-        <h1>One Stop Solutions To Explore Beauty East Java</h1>
-        <h2>Our Services</h2>
+        <p class="section-label fade" data-i18n="offer-label">WHAT WE OFFER</p>
+        <h2 class="section-title fade" data-i18n="offer-title">One Stop Solutions To Explore East Java</h2>
 
         <div class="dest-grid">
-            <div class="dest-card">
-                <a href="customizedprivatetrip.html" class="dest-link">
-                    <div class="card-image"> 
-                        <img src="https://picsum.photos/300/300?5" alt="Customized/Private trip" />
+            <!-- CARD 1: Customized/Private Trip -->
+            <div class="dest-card fade">
+                <a href="category.html?cat=CustomizedPrivateTrip" class="dest-link">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/260?random=1" alt="Customized Private Trip" />
                     </div>
                     <div class="card-content">
-                        <h3>Customized/<br>Private Trip</h3>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="dest-custom-title">Customized / Private Trip</h3>
+                        <p class="card-desc" data-i18n="dest-custom-desc">Rancang perjalanan impianmu sendiri, fleksibel
+                            sesuai jadwal & budget kamu.</p>
+                        <span class="card-cta" data-i18n="cta-btn">Lihat Paket <span class="cta-arrow">→</span></span>
                     </div>
                 </a>
             </div>
-            <div class="dest-card">
-                <a href="corporatemicegroup.html" class="dest-link">
-                    <div class="card-image"> 
-                        <img src="https://picsum.photos/300/300?5" alt="Customized/Private trip" />
+
+            <!-- CARD 2: Corporate/MICE/Group -->
+            <div class="dest-card fade">
+                <a href="category.html?cat=CorporateMice" class="dest-link">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/260?random=2" alt="Corporate MICE Group Trip" />
                     </div>
                     <div class="card-content">
-                        <h3>Corporate/MICE/<br>Group Trip</h3>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="dest-corp-title">Corporate / MICE / Group Trip</h3>
+                        <p class="card-desc" data-i18n="dest-corp-desc">Solusi lengkap untuk team building, gathering,
+                            dan perjalanan rombongan korporat.</p>
+                        <span class="card-cta" data-i18n="cta-btn">Lihat Paket <span class="cta-arrow">→</span></span>
                     </div>
                 </a>
             </div>
-            <div class="dest-card">
-                <a href="detail.html?dest=TransportTravel" class="dest-link">
-                    <div class="card-image"> 
-                        <img src="https://picsum.photos/300/300?5" alt="Customized/Private trip" />
+
+            <!-- CARD 3: Transport Travel -->
+            <div class="dest-card fade">
+                <a href="category.html?cat=TransportTravel" class="dest-link">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/260?random=3" alt="Transport Travel" />
                     </div>
                     <div class="card-content">
-                        <h3>Transport Travel</h3>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                                <circle cx="7" cy="17" r="2" />
+                                <path d="M9 17h6" />
+                                <circle cx="17" cy="17" r="2" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="dest-trans-title">Transport Travel</h3>
+                        <p class="card-desc" data-i18n="dest-trans-desc">Armada nyaman & berpengalaman siap antar-jemput
+                            ke seluruh destinasi Jawa Timur.</p>
+                        <span class="card-cta" data-i18n="cta-btn">Lihat Paket <span class="cta-arrow">→</span></span>
                     </div>
                 </a>
             </div>
-            <div class="dest-card">
-                <a href="detail.html?dest=OpenTrip" class="dest-link">
-                    <div class="card-image"> 
-                        <img src="https://picsum.photos/300/300?5" alt="Customized/Private trip" />
+
+            <!-- CARD 4: Open Trip -->
+            <div class="dest-card fade">
+                <a href="category.html?cat=OpenTrip" class="dest-link">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/260?random=4" alt="Open Trip" />
                     </div>
                     <div class="card-content">
-                        <h3>Open Trip</h3>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 17l4-8 4 5 3-3 4 6" />
+                                <path d="M21 21H3" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="dest-open-title">Open Trip</h3>
+                        <p class="card-desc" data-i18n="dest-open-desc">Bergabung dengan sesama traveler, hemat biaya
+                            dan temukan pengalaman tak terlupakan!</p>
+                        <span class="card-cta" data-i18n="cta-btn">Lihat Paket <span class="cta-arrow">→</span></span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
+
+    <!-- POPULAR PACKAGES -->
+    <section id="popular-packages" class="popular-packages">
+        <p class="section-label fade">TOP PICKS</p>
+        <h2 class="section-title fade">Popular Packages</h2>
+
+        <div class="tour-grid">
+            <!-- Package 1: Bromo -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=0" class="tour-card fade">
+                <span class="badge">🔥 TERPOPULER</span>
+                <img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=400&h=300&fit=crop"
+                    alt="Private Trip Bromo" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Bromo</h3>
+                    <p class="price">From Rp 750.000</p>
+                </div>
+            </a>
+
+            <!-- Package 2: Kawah Ijen -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=1" class="tour-card fade">
+                <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=400&h=300&fit=crop"
+                    alt="Private Trip Kawah Ijen" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Kawah Ijen</h3>
+                    <p class="price">From Rp 650.000</p>
+                </div>
+            </a>
+
+            <!-- Package 3: Tumpak Sewu -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=2" class="tour-card fade">
+                <span class="badge">✨ NEW TRIP!</span>
+                <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&h=300&fit=crop"
+                    alt="Private Trip Tumpak Sewu" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Tumpak Sewu</h3>
+                    <p class="price">From Rp 500.000</p>
+                </div>
+            </a>
+
+            <!-- Package 4: Banyuwangi -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=3" class="tour-card fade">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=400&h=300&fit=crop"
+                    alt="Private Trip Banyuwangi" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Banyuwangi</h3>
+                    <p class="price">From Rp 600.000</p>
+                </div>
+            </a>
+
+            <!-- Package 5: Baluran -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=4" class="tour-card fade">
+                <img src="https://picsum.photos/id/1018/400/300" alt="Private Trip Baluran" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Baluran</h3>
+                    <p class="price">From Rp 550.000</p>
+                </div>
+            </a>
+
+            <!-- Package 6: Malang City Tour -->
+            <a href="detail.html?dest=CustomizedPrivateTripDetail&tour=5" class="tour-card fade">
+                <span class="badge">CITY TOUR</span>
+                <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&h=300&fit=crop"
+                    alt="Private Trip Malang City" loading="lazy">
+                <div class="tour-info">
+                    <h3>Private Trip Malang City</h3>
+                    <p class="price">From Rp 350.000</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <!-- GALLERY -->
     <section id="gallery" class="gallery">
-        <h2>Travel Moments</h2>
+        <h2 class="fade">Travel Moments</h2>
 
-        <div class="gallery-grid">
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?5" /> </div>
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?4" /> </div>
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?6" /> </div>
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?7" /> </div>
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?8" /> </div>
-            <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?9" /> </div>
+        <div class="gallery-wrapper fade">
+            <!-- Left Arrow -->
+            <button class="gallery-arrow gallery-left desktop-only" aria-label="Previous image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-left">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?5" /> </div>
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?4" /> </div>
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?6" /> </div>
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?7" /> </div>
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?8" /> </div>
+                <div class="gallery-item"> <img class="fade" src="https://picsum.photos/300/300?9" /> </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="gallery-arrow gallery-right desktop-only" aria-label="Next image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
         </div>
     </section>
 
-    <!-- INFO -->
-    <section id="info" class="info">
-        <h2>Plan Your Visit</h2>
-        <p>Find the best time to visit, weather conditions, travel tips, and 
-           recommended routes to make your journey unforgettable.</p>
-        <a class="btn-primary" href="#">Learn More</a>
+    <!-- FLEET / ARMADA KAMI -->
+    <section id="fleet" class="fleet">
+        <p class="section-label fleet-label fade">ARMADA KAMI</p>
+        <h2 class="section-title fleet-title fade">Kendaraan Berkualitas, Perjalanan Nyaman</h2>
+        <p class="fleet-subtitle fade">Kami menyediakan berbagai kendaraan berkualitas dengan sopir profesional. Pilih
+            dari Avanza, Innova, Hiace, hingga Elf sesuai kebutuhan Anda.</p>
+
+        <div class="fleet-grid">
+
+            <!-- Armada 1: Hiace Commuter -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    14 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/hiace_commuter.png" alt="Hiace Commuter" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">HIACE COMMUTER</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 800.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 700.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Hiace%20Commuter"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Armada 2: Hiace Premio -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    14 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/hiace_premio.png" alt="Hiace Premio" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">HIACE PREMIO</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 1.000.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 900.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Hiace%20Premio"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Armada 3: Toyota Avanza -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    6 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/avanza.png" alt="Toyota Avanza" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">TOYOTA AVANZA</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 500.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 450.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Toyota%20Avanza"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Armada 4: Innova Reborn -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    7 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/innova_reborn.png" alt="Innova Reborn" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">INNOVA REBORN</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 650.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 600.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Innova%20Reborn"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Armada 5: Elf Long -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    18 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/elf_long.png" alt="Elf Long" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">ELF LONG</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 1.300.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 1.200.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Elf%20Long"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+            <!-- Armada 6: Fortuner -->
+            <div class="fleet-card fade">
+                <div class="fleet-capacity-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                        <path
+                            d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    5 Kursi
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="IMAGES/fortuner.png" alt="Fortuner" class="fleet-vehicle-img">
+                </div>
+                <div class="fleet-info">
+                    <h3 class="fleet-name">FORTUNER</h3>
+                    <div class="fleet-price-row">
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                Full Day
+                            </span>
+                            <span class="fleet-price-amount">Rp 1.500.000</span>
+                        </div>
+                        <div class="fleet-price-divider"></div>
+                        <div class="fleet-price-col">
+                            <span class="fleet-price-label">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                                    height="14">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                12 Jam
+                            </span>
+                            <span class="fleet-price-amount">Rp 1.400.000</span>
+                        </div>
+                    </div>
+                    <div class="fleet-includes">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14"
+                            height="14">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <path d="M9 17h6" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                        Unit, Driver, dan BBM
+                    </div>
+                    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20pesan%20Fortuner"
+                        target="_blank" class="fleet-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Pesan
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY TRAVEL HEREWEGO -->
+    <section id="why-us" class="why-us">
+        <p class="section-label fade" data-i18n="whyus-label">OUR VALUE</p>
+        <h2 class="section-title fade" data-i18n="whyus-title">Why Travel with HereWeGo?</h2>
+
+        <div class="features-grid">
+            <div class="feature-item fade">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3 data-i18n="whyus-guide-title">Expert Local Guides</h3>
+                <p data-i18n="whyus-guide-desc">Born and raised in East Java, our certified guides know every hidden
+                    trail, ensuring safe and highly authentic experiences.</p>
+            </div>
+            <div class="feature-item fade">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3 data-i18n="whyus-flex-title">Flexible Itineraries</h3>
+                <p data-i18n="whyus-flex-desc">Your journey, your rules. We customize every detail of your private trip
+                    to match your tempo, budget, and travel style.</p>
+            </div>
+            <div class="feature-item fade">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3 data-i18n="whyus-price-title">Transparent Pricing</h3>
+                <p data-i18n="whyus-price-desc">No hidden fees or surprise costs. What you see is what you pay, already
+                    covering transports and main entrance tickets.</p>
+            </div>
+            <div class="feature-item fade hidden-feature" style="display:none">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3 data-i18n="whyus-support-title">24/7 Dedicated Support</h3>
+                <p data-i18n="whyus-support-desc">From the moment you contact us until you return home safely, our team
+                    provides round-the-clock friendly assistance.</p>
+            </div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="whyus-viewall-wrap">
+            <button id="whyusViewAll" class="whyus-viewall-btn" onclick="toggleWhyUs()">
+                <span id="whyusViewAllText">View All</span>
+                <svg id="whyusArrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16"
+                    height="16">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+        <p class="section-label testi-label fade">KATA MEREKA</p>
+        <h2 class="testi-heading fade">What They Say</h2>
+        <p class="testi-subtitle fade">Testimoni dari pelanggan kami yang telah merasakan pengalaman perjalanan tak
+            terlupakan bersama HereWeGo</p>
+        <div class="testi-divider fade"></div>
+
+        <!-- Slider wrapper -->
+        <div class="testi-slider-wrap fade">
+            <!-- Prev Arrow -->
+            <button class="testi-arrow testi-prev" aria-label="Previous testimonial" onclick="prevTesti()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </button>
+
+            <!-- Track -->
+            <div class="testi-track" id="testiTrack">
+
+                <!-- Testimonial 1 -->
+                <div class="testi-card">
+                    <div class="testi-author-row">
+                        <div class="testi-avatar">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38">
+                                <path
+                                    d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+                            </svg>
+                        </div>
+                        <div class="testi-author-info">
+                            <strong>Reza Pratama</strong>
+                            <span>Private Trip Bromo</span>
+                        </div>
+                    </div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Perjalanan ke Bromo bersama HereWeGo luar biasa! Guide sangat ramah dan
+                        profesional, pemandangannya indah banget. Highly recommended untuk yang mau trip ke Jawa Timur!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testi-card">
+                    <div class="testi-author-row">
+                        <div class="testi-avatar">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38">
+                                <path
+                                    d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+                            </svg>
+                        </div>
+                        <div class="testi-author-info">
+                            <strong>Siti Nursyamsi</strong>
+                            <span>Open Trip Kawah Ijen</span>
+                        </div>
+                    </div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Open trip Kawah Ijen seru banget! Ketemu teman-teman baru yang seru, api
+                        biru-nya indah sekali. Crew HereWeGo juga baik dan informatif sepanjang perjalanan."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testi-card">
+                    <div class="testi-author-row">
+                        <div class="testi-avatar">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38">
+                                <path
+                                    d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+                            </svg>
+                        </div>
+                        <div class="testi-author-info">
+                            <strong>Budi Santoso</strong>
+                            <span>Corporate Trip Malang</span>
+                        </div>
+                    </div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Kami menggunakan jasa HereWeGo untuk company trip dan hasilnya memuaskan
+                        sekali. Koordinasinya rapi, transportasi nyaman, dan semua berjalan sesuai jadwal. Terima kasih
+                        HereWeGo!"</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testi-card">
+                    <div class="testi-author-row">
+                        <div class="testi-avatar">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="38" height="38">
+                                <path
+                                    d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z" />
+                            </svg>
+                        </div>
+                        <div class="testi-author-info">
+                            <strong>Dewi Rahayu</strong>
+                            <span>Private Trip Tumpak Sewu</span>
+                        </div>
+                    </div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-text">"Air terjun Tumpak Sewu keren abis! HereWeGo menyediakan pemandu lokal yang
+                        berpengalaman dan tahu jalur terbaik. Harga juga sangat reasonable, worth it banget!"</p>
+                </div>
+
+            </div>
+
+            <!-- Next Arrow -->
+            <button class="testi-arrow testi-next" aria-label="Next testimonial" onclick="nextTesti()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="testi-dots" id="testiDots"></div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2025 HereWego. All rights reserved.</p>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentYear">2026</span> HereWeGo. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/herewego.idn/" target="_blank" aria-label="Instagram HereWeGo"
+                    class="footer-ig">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" width="20" height="20">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                    </svg>
+                    @herewego.idn
+                </a>
+                <a href="https://wa.me/6281200000000" target="_blank" aria-label="WhatsApp HereWeGo" class="footer-wa">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    +62 821-3888-8447
+                </a>
+            </div>
+        </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/+6212345678?text=Ini%20Pesan%20Tinggal%20Kirim%0ATesting%20Text%20Chat" class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/6281200000000?text=Halo%20HereWeGo!%20Saya%20ingin%20tanya%20paket%20wisata" class="wa-float"
+        target="_blank" aria-label="Chat on WhatsApp">
         <div class="wa-text">Chat with Us</div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="wa-icon">
     </a>
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
 </body>
+
 </html>
