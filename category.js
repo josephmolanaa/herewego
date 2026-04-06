@@ -36,7 +36,7 @@ const categoryData = {
             id: "Rancang perjalananmu sendiri, sesuai jadwal & budget.",
             en: "Design your own journey, perfectly suited to your schedule & budget."
         },
-        waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20Customized%20Private%20Trip",
+        waText: "Halo%20HereWeGo!%20Saya%20tertarik%20dengan%20paket%20Customized%20Private%20Trip.%20Bisa%20bantu%20info%20lebih%20lanjut%3F",
         tours: [
             {
                 title: "Private Trip Bromo",
@@ -95,7 +95,7 @@ const categoryData = {
             id: "Solusi terbaik untuk perjalanan korporat dan rombongan besar.",
             en: "The best solution for corporate travels and large groups."
         },
-        waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20Corporate%20MICE%20Trip",
+        waText: "Halo%20HereWeGo!%20Saya%20tertarik%20dengan%20paket%20Corporate%20%2F%20MICE%20%2F%20Group%20Trip.%20Bisa%20bantu%20info%20dan%20penawaran%3F",
         tours: [
             {
                 title: "Corporate MICE Trip 1",
@@ -122,7 +122,7 @@ const categoryData = {
             id: "Perjalanan nyaman dengan armada terbaik ke seluruh destinasi.",
             en: "Comfortable journey with the best fleet to all destinations."
         },
-        waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20Transport%20Travel",
+        waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20informasi%20Transport%20Travel.%20Bisa%20bantu%3F",
         tours: [
             {
                 title: "Innova Reborn",
@@ -149,7 +149,7 @@ const categoryData = {
             id: "Gabung bareng traveler lain dengan harga spesial dan pengalaman tak terlupakan!",
             en: "Join fellow travelers with special prices and unforgettable experiences!"
         },
-        waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20Open%20Trip",
+        waText: "Halo%20HereWeGo!%20Saya%20tertarik%20dengan%20Open%20Trip.%20Bisa%20info%20jadwal%20dan%20harga%3F",
         tours: [
             {
                 title: "Open Trip Bromo Midnight",
@@ -190,7 +190,7 @@ if (selected) {
     // Set link WhatsApp sesuai kategori
     const waLink = document.getElementById("wa-link");
     if (waLink) {
-        waLink.href = `https://wa.me/6281200000000?text=${selected.waText}`;
+        waLink.href = `https://wa.me/6285185636301?text=${selected.waText}`;
     }
 
     // Render kartu tour

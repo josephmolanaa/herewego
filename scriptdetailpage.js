@@ -316,6 +316,7 @@ if (document.getElementById("detail-title")) {
     // Update link WA supaya otomatis ada nama tour-nya
     const waLink = document.querySelector(".btn-primary");
     if(waLink) {
-        waLink.href = waLink.href.replace("[TOUR_NAME]", data.title);
+        const tourName = encodeURIComponent(data.title);
+        waLink.href = `https://wa.me/6285185636301?text=Halo%20HereWeGo!%20Saya%20ingin%20booking%20paket%20${tourName}.%20Bisa%20bantu%20proses%20pemesanan%3F`;
     }
 }
