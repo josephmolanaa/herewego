@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Jangan eksekusi rule jika yang diakses adalah file/folder fisik (misal css, js, gambar)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Aturan untuk clean URL Category (misal: /CorporateMice => category.html?cat=CorporateMice)
+RewriteRule ^([a-zA-Z0-9_-]+)$ category.html?cat=$1 [L,QSA]
+
+# Aturan tambahan untuk halaman Detail (opsional: jika suatu saat mau /detail/123)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^detail/([0-9]+)$ detail.html?id=$1 [L,QSA]
