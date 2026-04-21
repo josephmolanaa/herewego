@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="IMAGES/LOGO WHITE PNG.png" type="image/png">
+    <link rel="icon" href="IMAGES/favicon-search.png" type="image/png">
+    <link rel="apple-touch-icon" href="IMAGES/favicon-search.png">
+    <meta name="description" content="Detail trip HereWeGo Indonesia. Discover detailed itineraries, clear pricing, and package inclusions for Bromo, Ijen, Tumpak Sewu, and more.">
+    <meta name="keywords" content="HereWeGo Trip Details, Travel Packages, Bromo Tour Itinerary, Ijen Price, Tumpak Sewu Trip, Malang City Tour Details">
+    <meta property="og:title" content="HereWeGo Indonesia | Trip Details & Packages">
+    <meta property="og:description" content="View our detailed travel itineraries, flexible pricing, and complete inclusions. Find your next adventure in East Java.">
+    <meta property="og:image" content="https://herewegoindonesia.com/IMAGES/favicon-square.jpg">
+    <meta property="og:type" content="website">
     <title>HereWeGo - Detail Tour</title>
     <link rel="stylesheet" href="detailstyle.css"/>
     <link href="https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17441" rel="stylesheet"/>
@@ -35,20 +42,89 @@
         </div>
     </nav>
 
-    <!-- DETAIL TOUR SECTION -->
-    <section class="tour-detail">
-        <div class="detail-container">
-            <img id="detail-img" src="" alt="Tour Image">
-            <div class="detail-text">
+    <!-- HERO BANNER -->
+    <div class="detail-hero">
+        <img id="detail-img" src="" alt="Tour Image" class="hero-img">
+        <div class="hero-overlay">
+            <div class="hero-content">
                 <h1 id="detail-title">Loading...</h1>
                 <p id="detail-desc">Loading...</p>
-                <ul id="detail-itinerary">
-                    <!-- JS bakal isi itinerary -->
-                </ul>
-                <p class="detail-price" id="detail-price">Rp 0</p>
-                <a id="wa-book-btn" href="https://wa.me/6285185636301?text=Halo%20HereWeGo!%20Saya%20ingin%20booking%20paket%20[TOUR_NAME].%20Bisa%20bantu%20proses%20pemesanan%3F" class="btn-primary">Book Now via WA</a>
-                <a href="index.html" class="btn-secondary">Back to Home</a>
+                <div class="hero-cta">
+                    <a id="wa-book-btn" href="https://wa.me/6285185636301?text=Halo%20HereWeGo!%20Saya%20ingin%20booking%20paket%20[TOUR_NAME].%20Bisa%20bantu%20proses%20pemesanan%3F" class="btn-primary">🟢 Book Now via WA</a>
+                    <span class="hero-price-badge"><strong id="detail-price-hero">Rp 0</strong></span>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <section class="tour-content">
+        <div class="content-single">
+
+            <!-- QUICK BOOKING STRIP -->
+            <div class="quick-book-strip">
+                <div class="quick-book-left">
+                    <span class="quick-book-label">Mulai dari</span>
+                    <p class="quick-book-price" id="detail-price">Rp 0</p>
+                </div>
+                <a id="wa-book-btn" href="https://wa.me/6285185636301" class="btn-primary">
+                    🟢 Book Now via WA
+                </a>
+            </div>
+
+            <!-- ITINERARY -->
+            <div class="detail-section" id="itinerary-section">
+                <h2 class="section-label">🗺️ Itinerary</h2>
+                <ul id="detail-itinerary"></ul>
+            </div>
+
+            <!-- HARGA PER PAX -->
+            <div class="detail-section" id="price-table-section" style="display:none;">
+                <h2 class="section-label">💰 Harga per Orang</h2>
+                <div class="price-table-wrapper">
+                    <table id="detail-price-table" class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Jumlah Pax</th>
+                                <th>Armada</th>
+                                <th>Harga / Orang</th>
+                            </tr>
+                        </thead>
+                        <tbody id="price-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- INCLUDE / EXCLUDE (side by side) -->
+            <div class="include-exclude-grid" id="include-exclude-section" style="display:none;">
+                <div class="inc-exc-box include-box">
+                    <h2 class="section-label">✅ Include</h2>
+                    <ul id="detail-include"></ul>
+                </div>
+                <div class="inc-exc-box exclude-box">
+                    <h2 class="section-label">❌ Exclude</h2>
+                    <ul id="detail-exclude"></ul>
+                </div>
+            </div>
+
+            <!-- TRIP INFO -->
+            <div class="detail-section" id="trip-info-section" style="display:none;">
+                <h2 class="section-label">📋 Info Trip</h2>
+                <ul id="trip-info-list" class="info-list"></ul>
+            </div>
+
+            <!-- BIAYA TAMBAHAN -->
+            <div class="detail-section" id="extra-charge-section" style="display:none;">
+                <h2 class="section-label">⚠️ Biaya Tambahan</h2>
+                <ul id="extra-charge-list" class="info-list warning-list"></ul>
+            </div>
+
+            <!-- BOTTOM CTA -->
+            <div class="bottom-cta">
+                <a id="wa-book-btn-2" href="https://wa.me/6285185636301" class="btn-primary btn-large">🟢 Book Now via WhatsApp</a>
+                <a href="index.html" class="btn-secondary">← Kembali ke Home</a>
+            </div>
+
         </div>
     </section>
 

@@ -39,32 +39,76 @@ const params = new URLSearchParams(window.location.search);
 const dest = params.get("dest");
 const tourIndex = parseInt(params.get("tour"), 0);
 
-const tourData = {        
+const tourData = {
     CustomizedPrivateTripDetail: [
         {
             title: "Private Trip Bromo",
             desc: {
-                id: "Saksikan keindahan Gunung Bromo dari sunrise point Penanjakan, lekukan lautan pasir, dan kawah aktifnya yang ikonik. Trip ini dirancang privat sesuai jadwal kamu.",
-                en: "Witness the beauty of Mount Bromo from Penanjakan sunrise point, the majestic sea of sand, and its iconic active crater. This trip is beautifully tailored for you."
+                id: "Saksikan keindahan Gunung Bromo dari sunrise point Penanjakan, lekukan lautan pasir, dan kawah aktifnya yang ikonik. Trip ini dirancang privat sesuai jadwal kamu — fleksibel, nyaman, dan tak terlupakan!",
+                en: "Witness the breathtaking beauty of Mount Bromo from the Penanjakan sunrise point, the vast sea of sand, and its iconic active crater. This private trip is designed around your schedule — flexible, comfortable, and unforgettable!"
             },
             img: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=600&h=400&fit=crop",
             itinerary: {
                 id: [
-                    "Pick up area Malang pukul 00.00",
-                    "Tiba di Penanjakan, nonton sunrise spektakuler",
-                    "Turun ke lautan pasir & kawah Bromo",
-                    "Sarapan di warung lokal",
-                    "Kembali ke Malang sekitar pukul 11.00"
+                    "🕛 00.00 — Pick up di area Malang / Surabaya (by request)",
+                    "🌄 03.00–04.00 — Tiba di Pananjakan / Seruni Point, siap menyaksikan sunrise",
+                    "☀️ 05.00–06.00 — Menikmati golden sunrise Bromo yang spektakuler",
+                    "🏜️ 06.30 — Turun menuju Lautan Pasir & Kawah Bromo",
+                    "🐴 07.00 — Naik kuda (optional) menuju tangga kawah Bromo",
+                    "📸 07.30–08.30 — Foto session di kawah & spot-spot terbaik",
+                    "🍽️ 09.00 — Sarapan di warung lokal",
+                    "🏠 10.00–11.00 — Perjalanan kembali ke Malang / Surabaya"
                 ],
                 en: [
-                    "Pick up in Malang area at 00:00",
-                    "Arrive at Penanjakan, watch spectacular sunrise",
-                    "Descend to the sea of sand & Bromo crater",
-                    "Breakfast at a local warung",
-                    "Return to Malang around 11:00"
+                    "🕛 00:00 — Pick up in Malang / Surabaya area (by request)",
+                    "🌄 03:00–04:00 — Arrive at Pananjakan / Seruni Point for sunrise viewing",
+                    "☀️ 05:00–06:00 — Enjoy the spectacular golden Bromo sunrise",
+                    "🏜️ 06:30 — Head to the Sea of Sand & Bromo Crater",
+                    "🐴 07:00 — Horse ride (optional) to the Bromo crater steps",
+                    "📸 07:30–08:30 — Photo session at the crater & best spots",
+                    "🍽️ 09:00 — Breakfast at a local warung",
+                    "🏠 10:00–11:00 — Return to Malang / Surabaya"
                 ]
             },
-            price: "Rp 750.000 / orang"
+            priceTable: [
+                { pax: "2 Pax", armada: "Avanza / Xenia", price: "Rp 400.000/orang" },
+                { pax: "3 Pax", armada: "Avanza / Xenia", price: "Rp 350.000/orang" },
+                { pax: "4 Pax", armada: "Avanza / Xenia", price: "Rp 300.000/orang" },
+                { pax: "5–6 Pax", armada: "Hiace / Avanza", price: "Rp 275.000/orang" },
+                { pax: "7–10 Pax", armada: "Hiace Commuter", price: "Rp 250.000/orang" },
+                { pax: "11–14 Pax", armada: "Hiace Premio / ELF", price: "Rp 225.000/orang" },
+                { pax: "15–19 Pax", armada: "Hiace Premio / ELF", price: "Rp 200.000/orang" },
+                { pax: "20–25 Pax", armada: "Bus Medium", price: "Rp 175.000/orang" },
+            ],
+            tripInfo: [
+                "📍 Meeting Point: Malang / Surabaya (by request)",
+                "⏱️ Durasi: ±10–11 jam (midnight trip)",
+                "🗓️ Tersedia: Setiap hari (by request)",
+                "👥 Min. Peserta: 2 orang",
+                "📞 Booking: Min. H-1 sebelum keberangkatan"
+            ],
+            include: [
+                "🚗 Transportasi PP (AC & WiFi)",
+                "👨‍✈️ Driver berpengalaman",
+                "🗺️ Trip Organizer / Guide",
+                "💧 Air mineral selama perjalanan",
+                "🎫 Tiket masuk Taman Nasional Bromo",
+                "🅿️ Biaya parkir"
+            ],
+            exclude: [
+                "🍽️ Makan (ditanggung sendiri)",
+                "🐴 Sewa kuda (Rp 100.000–150.000/kuda)",
+                "🎟️ Jeep Lautan Pasir (optional, ±Rp 600.000–800.000/jeep)",
+                "📷 Dokumentasi/foto profesional",
+                "🏨 Akomodasi (jika menginap)",
+                "💡 Pengeluaran pribadi"
+            ],
+            extraCharges: [
+                "🐴 Sewa kuda: Rp 100.000–150.000/kuda",
+                "🚙 Jeep Kawah Bromo: Rp 600.000–800.000/unit (maks 5 orang)",
+                "🏞️ Tiket masuk Savana: Rp 5.000/orang (sudah include jika booking jeep)"
+            ],
+            price: "Mulai Rp 175.000 / orang"
         },
         {
             title: "Private Trip Kawah Ijen",
@@ -94,27 +138,77 @@ const tourData = {
         {
             title: "Private Trip Tumpak Sewu",
             desc: {
-                id: "Kunjungi Tumpak Sewu, air terjun tirai selebar 120m yang dijuluki 'Magic Waterfall'. Pengalaman trekking seru melewati hutan lebat dan sungai jernih.",
-                en: "Visit Tumpak Sewu, a 120m wide curtain waterfall dubbed 'Magic Waterfall'. A thrilling trekking experience through dense forest and crystal-clear rivers."
+                id: "Kunjungi Tumpak Sewu, air terjun tirai selebar 120m yang dijuluki 'Magic Waterfall'. Nikmati trekking seru melewati hutan lebat, jembatan gantung, dan sungai jernih — sebuah petualangan yang tak terlupakan!",
+                en: "Visit Tumpak Sewu, a 120m wide curtain waterfall dubbed the 'Magic Waterfall'. Enjoy an exciting trek through dense jungle, suspension bridges, and crystal rivers — a truly unforgettable adventure!"
             },
             img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&h=400&fit=crop",
             itinerary: {
                 id: [
-                    "Pick up area Malang pagi hari",
-                    "Trekking turun ke lembah Tumpak Sewu",
-                    "Berendam di bawah air terjun",
-                    "Foto di spot terbaik",
-                    "Kembali ke Malang sore hari"
+                    "🌅 06.30–07.00 — Pick up dijemput di area Malang / Kota",
+                    "🚗 08.00–09.00 — Perjalanan menuju Pronojiwo, Lumajang",
+                    "🥾 09.30 — Tiba, registrasi & briefing safety",
+                    "🌿 10.00 — Mulai trekking turun menuju lembah Tumpak Sewu",
+                    "💧 11.00 — Tiba di bawah air terjun, berendam & foto session",
+                    "🏔️ 12.00 — Trekking menuju Goa Tetes (optional)",
+                    "🍽️ 13.00–14.00 — Makan siang di warung sekitar",
+                    "🚶 14.30 — Trekking kembali ke atas (exit)",
+                    "🚗 15.30 — Perjalanan kembali ke Malang",
+                    "🏠 17.00–18.00 — Tiba di Malang / titik awal"
                 ],
                 en: [
-                    "Pick up in Malang area in the morning",
-                    "Trek down to Tumpak Sewu valley",
-                    "Bathe beneath the waterfall",
-                    "Photo session at best spots",
-                    "Return to Malang in the afternoon"
+                    "🌅 06:30–07:00 — Pick up in Malang / City area",
+                    "🚗 08:00–09:00 — Drive to Pronojiwo, Lumajang",
+                    "🥾 09:30 — Arrive, registration & safety briefing",
+                    "🌿 10:00 — Begin trekking down to Tumpak Sewu valley",
+                    "💧 11:00 — Arrive under the waterfall, swim & photo session",
+                    "🏔️ 12:00 — Trek to Goa Tetes (optional)",
+                    "🍽️ 13:00–14:00 — Lunch at local warungs",
+                    "🚶 14:30 — Trek back up (exit)",
+                    "🚗 15:30 — Return drive to Malang",
+                    "🏠 17:00–18:00 — Arrive in Malang / start point"
                 ]
             },
-            price: "Rp 500.000 / orang"
+            priceTable: [
+                { pax: "2 Pax", armada: "Avanza / Xenia", price: "Rp 475.000/orang" },
+                { pax: "3 Pax", armada: "Avanza / Xenia", price: "Rp 375.000/orang" },
+                { pax: "4 Pax", armada: "Avanza / Xenia", price: "Rp 300.000/orang" },
+                { pax: "5–6 Pax", armada: "Hiace / Avanza", price: "Rp 275.000/orang" },
+                { pax: "7–10 Pax", armada: "Hiace Commuter", price: "Rp 250.000/orang" },
+                { pax: "11–14 Pax", armada: "Hiace Premio / ELF", price: "Rp 225.000/orang" },
+                { pax: "15–19 Pax", armada: "Hiace Premio / ELF", price: "Rp 200.000/orang" },
+                { pax: "20–25 Pax", armada: "Bus Medium", price: "Rp 175.000/orang" },
+            ],
+            tripInfo: [
+                "📍 Meeting Point: Area Malang Kota (by request)",
+                "⏱️ Durasi: ±10–12 jam (day trip)",
+                "🗓️ Tersedia: Setiap hari (by request)",
+                "👥 Min. Peserta: 2 orang",
+                "📞 Booking: Min. H-1 sebelum keberangkatan",
+                "⛰️ Level Trekking: Menengah (ada turunan curam & tangga)"
+            ],
+            include: [
+                "🚗 Transportasi PP (AC & WiFi)",
+                "👨‍✈️ Driver berpengalaman",
+                "🗺️ Trip Organizer / Guide lokal",
+                "💧 Air mineral selama perjalanan",
+                "🎫 Tiket masuk Tumpak Sewu",
+                "🅿️ Biaya parkir",
+                "🧴 Safety briefing"
+            ],
+            exclude: [
+                "🍽️ Makan siang (ditanggung sendiri)",
+                "👟 Sewa sepatu anti-slip (optional, ±Rp 15.000)",
+                "🏔️ Tiket Goa Tetes (jika dikunjungi, ±Rp 5.000)",
+                "📷 Dokumentasi/foto profesional",
+                "🏨 Akomodasi (jika menginap)",
+                "💡 Pengeluaran pribadi"
+            ],
+            extraCharges: [
+                "👟 Sewa sandal/sepatu anti-slip: Rp 15.000–25.000",
+                "🚁 Pemandu ekstra (untuk grup ≥15 orang): by request",
+                "🏔️ Goa Tetes: Rp 5.000/orang (optional)"
+            ],
+            price: "Mulai Rp 175.000 / orang"
         },
         {
             title: "Private Trip Banyuwangi",
@@ -192,6 +286,7 @@ const tourData = {
             price: "Rp 350.000 / orang"
         },
     ],
+
 
     CorporateMiceGroupTourDetail: [
         {
@@ -301,22 +396,91 @@ if (document.getElementById("detail-title")) {
     document.getElementById("detail-img").src = data.img;
     document.getElementById("detail-price").textContent = data.price;
 
+    // Update harga di hero badge juga
+    const heroPriceEl = document.getElementById("detail-price-hero");
+    if (heroPriceEl) heroPriceEl.textContent = data.price;
+
+    // === ITINERARY ===
     const itineraryList = document.getElementById("detail-itinerary");
     itineraryList.innerHTML = "";
-    
-    // Pastikan array itinerary aman jika data tour belum di-update formatnya
     const itArr = Array.isArray(data.itinerary) ? data.itinerary : (data.itinerary[lang] || data.itinerary.id);
-    
     itArr.forEach(item => {
         const li = document.createElement("li");
         li.textContent = item;
         itineraryList.appendChild(li);
     });
 
-    // Update link WA supaya otomatis ada nama tour-nya
-    const waLink = document.querySelector(".btn-primary");
-    if(waLink) {
-        const tourName = encodeURIComponent(data.title);
-        waLink.href = `https://wa.me/6285185636301?text=Halo%20HereWeGo!%20Saya%20ingin%20booking%20paket%20${tourName}.%20Bisa%20bantu%20proses%20pemesanan%3F`;
+    // === PRICE TABLE ===
+    const priceTableSection = document.getElementById("price-table-section");
+    const priceTableBody = document.getElementById("price-table-body");
+    if (data.priceTable && data.priceTable.length > 0 && priceTableSection && priceTableBody) {
+        priceTableSection.style.display = "";
+        data.priceTable.forEach(row => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${row.pax}</td>
+                <td>${row.armada}</td>
+                <td class="highlight-price">${row.price}</td>
+            `;
+            priceTableBody.appendChild(tr);
+        });
     }
+
+    // === TRIP INFO ===
+    const tripInfoSection = document.getElementById("trip-info-section");
+    const tripInfoList = document.getElementById("trip-info-list");
+    if (data.tripInfo && data.tripInfo.length > 0 && tripInfoSection && tripInfoList) {
+        tripInfoSection.style.display = "";
+        data.tripInfo.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            tripInfoList.appendChild(li);
+        });
+    }
+
+    // === INCLUDE / EXCLUDE ===
+    const incExcSection = document.getElementById("include-exclude-section");
+    const includeList = document.getElementById("detail-include");
+    const excludeList = document.getElementById("detail-exclude");
+    if ((data.include || data.exclude) && incExcSection) {
+        incExcSection.style.display = "";
+        if (data.include && includeList) {
+            data.include.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                includeList.appendChild(li);
+            });
+        }
+        if (data.exclude && excludeList) {
+            data.exclude.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                excludeList.appendChild(li);
+            });
+        }
+    }
+
+    // === EXTRA CHARGES ===
+    const extraSection = document.getElementById("extra-charge-section");
+    const extraList = document.getElementById("extra-charge-list");
+    if (data.extraCharges && data.extraCharges.length > 0 && extraSection && extraList) {
+        extraSection.style.display = "";
+        data.extraCharges.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            extraList.appendChild(li);
+        });
+    }
+
+    // Update link WA supaya otomatis ada nama tour-nya (kedua tombol)
+    const tourName = encodeURIComponent(data.title);
+    const waUrl = `https://wa.me/6285185636301?text=Halo%20HereWeGo!%20Saya%20ingin%20booking%20paket%20${tourName}.%20Bisa%20bantu%20proses%20pemesanan%3F`;
+
+    document.querySelectorAll(".btn-primary").forEach(btn => {
+        btn.href = waUrl;
+    });
+
+    const waBtn2 = document.getElementById("wa-book-btn-2");
+    if (waBtn2) waBtn2.href = waUrl;
 }
+

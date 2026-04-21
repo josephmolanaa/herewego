@@ -41,15 +41,15 @@ const categoryData = {
             {
                 title: "Private Trip Bromo",
                 img: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=400&h=300&fit=crop",
-                price: "Rp 750.000",
+                price: "Rp 175.000",
                 from: { id: "Mulai ", en: "From " },
-                badge: { id: "🔥 TERPOPULER", en: "🔥 MOST POPULAR" },
+                badge: { id: "🔥 SPECIAL PROMO", en: "🔥 SPECIAL PROMO" },
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=0"
             },
             {
                 title: "Private Trip Kawah Ijen",
                 img: "https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=400&h=300&fit=crop",
-                price: "Rp 650.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: null,
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=1"
@@ -57,15 +57,15 @@ const categoryData = {
             {
                 title: "Private Trip Tumpak Sewu",
                 img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&h=300&fit=crop",
-                price: "Rp 500.000",
+                price: "Rp 175.000",
                 from: { id: "Mulai ", en: "From " },
-                badge: { id: "✨ NEW TRIP!", en: "✨ NEW TRIP!" },
+                badge: { id: "🔥 SPECIAL PROMO", en: "🔥 SPECIAL PROMO" },
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=2"
             },
             {
                 title: "Private Trip Banyuwangi",
                 img: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=400&h=300&fit=crop",
-                price: "Rp 600.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: null,
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=3"
@@ -73,7 +73,7 @@ const categoryData = {
             {
                 title: "Private Trip Baluran",
                 img: "https://picsum.photos/id/1018/400/300",
-                price: "Rp 550.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: null,
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=4"
@@ -81,7 +81,7 @@ const categoryData = {
             {
                 title: "Private Trip Malang City",
                 img: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400&h=300&fit=crop",
-                price: "Rp 350.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: { id: "CITY TOUR", en: "CITY TOUR" },
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=5"
@@ -154,7 +154,7 @@ const categoryData = {
             {
                 title: "Open Trip Bromo Midnight",
                 img: "https://picsum.photos/400/300?random=40",
-                price: "Rp 350.000",
+                price: "Rp 300.000",
                 from: null,
                 badge: null,
                 link: "detail.html?dest=OpenTripDetail&tour=0"
@@ -162,7 +162,7 @@ const categoryData = {
             {
                 title: "Open Trip Tumpak Sewu",
                 img: "https://picsum.photos/400/300?random=41",
-                price: "Rp 250.000",
+                price: "Rp 300.000",
                 from: null,
                 badge: { id: "MENDATANG!", en: "UPCOMING!" },
                 link: "detail.html?dest=OpenTripDetail&tour=1"
@@ -181,7 +181,7 @@ const selected = categoryData[cat];
 if (selected) {
     // Current lang didapat dari i18n.js
     const lang = window.currentLang || 'id';
-    
+
     // Set judul halaman & hero
     document.title = `${selected.title} - HereWeGo`;
     document.getElementById("cat-title").textContent = selected.title;
