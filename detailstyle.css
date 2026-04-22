@@ -906,3 +906,21 @@ footer {
         box-shadow: none;
     }
 }
+
+/* WA ICON INSIDE BUTTON */
+.btn-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wa-btn-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.btn-large .wa-btn-icon {
+    width: 22px;
+    height: 22px;
+}

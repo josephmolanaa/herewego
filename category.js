@@ -41,7 +41,7 @@ const categoryData = {
             {
                 title: "Private Trip Bromo",
                 img: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=400&h=300&fit=crop",
-                price: "Rp 175.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: { id: "🔥 SPECIAL PROMO", en: "🔥 SPECIAL PROMO" },
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=0"
@@ -57,7 +57,7 @@ const categoryData = {
             {
                 title: "Private Trip Tumpak Sewu",
                 img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&h=300&fit=crop",
-                price: "Rp 175.000",
+                price: "Rp 300.000",
                 from: { id: "Mulai ", en: "From " },
                 badge: { id: "🔥 SPECIAL PROMO", en: "🔥 SPECIAL PROMO" },
                 link: "detail.html?dest=CustomizedPrivateTripDetail&tour=2"
@@ -152,7 +152,7 @@ const categoryData = {
         waText: "Halo%20HereWeGo!%20Saya%20tertarik%20dengan%20Open%20Trip.%20Bisa%20info%20jadwal%20dan%20harga%3F",
         tours: [
             {
-                title: "Open Trip Bromo Midnight",
+                title: "Open Trip Bromo",
                 img: "https://picsum.photos/400/300?random=40",
                 price: "Rp 300.000",
                 from: null,
@@ -164,7 +164,7 @@ const categoryData = {
                 img: "https://picsum.photos/400/300?random=41",
                 price: "Rp 300.000",
                 from: null,
-                badge: { id: "MENDATANG!", en: "UPCOMING!" },
+                badge: { id: "PROMO!", en: "PROMO!" },
                 link: "detail.html?dest=OpenTripDetail&tour=1"
             },
         ]
