@@ -1,0 +1,51 @@
+
+/* ============ PRICE TABLE TITLE & NOTE ============ */
+.price-table-title {
+    color: #8ECAE6;
+    font-size: 0.87rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0 0 10px;
+}
+.price-table-note {
+    color: rgba(253, 250, 246, 0.55);
+    font-size: 0.78rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-style: italic;
+    margin: 10px 0 0;
+    padding: 10px 14px;
+    background: rgba(251, 133, 0, 0.06);
+    border-left: 3px solid #FB8500;
+    border-radius: 0 8px 8px 0;
+    line-height: 1.5;
+}
+
+/* ============ MUST BRING GRID ============ */
+.must-bring-grid {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+.must-bring-grid li {
+    background: rgba(33, 158, 188, 0.1);
+    border: 1px solid rgba(33, 158, 188, 0.2);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #fdfaf6;
+    font-size: 0.88rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.must-bring-grid li::before {
+    content: "✓";
+    color: #219EBC;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+@media (max-width: 480px) {
+    .must-bring-grid { grid-template-columns: 1fr; }
+}

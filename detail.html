@@ -13,6 +13,7 @@
     <meta property="og:type" content="website">
     <title>HereWeGo - Detail Tour</title>
     <link rel="stylesheet" href="detailstyle.css"/>
+    <link rel="stylesheet" href="detailextra.css"/>
     <link href="https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17441" rel="stylesheet"/>
     <link href="https://fonts.cdnfonts.com/css/gc-palioka" rel="stylesheet"/>
     <script src="i18n.js"></script>
@@ -76,18 +77,20 @@
             <!-- HARGA PER PAX (simple, untuk tour lain) -->
             <div class="detail-section" id="price-table-section" style="display:none;">
                 <h2 class="section-label">💰 Harga per Orang</h2>
+                <p id="price-table-title" class="price-table-title"></p>
                 <div class="price-table-wrapper">
                     <table id="detail-price-table" class="price-table">
                         <thead>
                             <tr>
-                                <th>Jumlah Pax</th>
-                                <th>Armada</th>
+                                <th>Pax</th>
+                                <th>Transport</th>
                                 <th>Harga / Orang</th>
                             </tr>
                         </thead>
                         <tbody id="price-table-body"></tbody>
                     </table>
                 </div>
+                <p id="price-table-note" class="price-table-note"></p>
             </div>
 
             <!-- INCLUDE / EXCLUDE (side by side) -->
@@ -118,6 +121,12 @@
             <div class="detail-section" id="bromo-closure-section" style="display:none;">
                 <h2 class="section-label">📅 Jadwal Bromo Tutup 2026</h2>
                 <div id="bromo-closure-grid" class="bromo-closure-grid"></div>
+            </div>
+
+            <!-- BARANG WAJIB DIBAWA -->
+            <div class="detail-section" id="must-bring-section" style="display:none;">
+                <h2 class="section-label">🎒 Barang Wajib Dibawa</h2>
+                <ul id="must-bring-list" class="must-bring-grid"></ul>
             </div>
 
             <!-- BOTTOM CTA -->

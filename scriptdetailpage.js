@@ -214,78 +214,98 @@ const tourData = {
         {
             title: "Private Trip Tumpak Sewu",
             desc: {
-                id: "Kunjungi Tumpak Sewu, air terjun tirai selebar 120m yang dijuluki 'Magic Waterfall'. Nikmati trekking seru melewati hutan lebat, jembatan gantung, dan sungai jernih — sebuah petualangan yang tak terlupakan!",
-                en: "Visit Tumpak Sewu, a 120m wide curtain waterfall dubbed the 'Magic Waterfall'. Enjoy an exciting trek through dense jungle, suspension bridges, and crystal rivers — a truly unforgettable adventure!"
+                id: "Magical waterfall yang menakjubkan! Nikmati panorama air terjun tirai Tumpak Sewu, trekking seru ke dasar air terjun, eksplorasi Goa Tetes, dan Telaga Nirwana dalam satu paket privat yang eksklusif.",
+                en: "A magical waterfall experience! Enjoy the panoramic curtain waterfall of Tumpak Sewu, exciting trekking to the base, exploring Goa Tetes, and Telaga Nirwana — all in one exclusive private package."
             },
             img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&h=400&fit=crop",
+            destinations: [
+                "Panorama Tumpak Sewu",
+                "Goa Tetes",
+                "Air Terjun Tumpak Sewu",
+                "Telaga Nirwana",
+                "Sunset Pronojiwo / Teras Semeru (opsional)"
+            ],
             itinerary: {
                 id: [
-                    "🌅 06.30–07.00 — Pick up dijemput di area Malang / Kota",
-                    "🚗 08.00–09.00 — Perjalanan menuju Pronojiwo, Lumajang",
-                    "🥾 09.30 — Tiba, registrasi & briefing safety",
-                    "🌿 10.00 — Mulai trekking turun menuju lembah Tumpak Sewu",
-                    "💧 11.00 — Tiba di bawah air terjun, berendam & foto session",
-                    "🏔️ 12.00 — Trekking menuju Goa Tetes (optional)",
-                    "🍽️ 13.00–14.00 — Makan siang di warung sekitar",
-                    "🚶 14.30 — Trekking kembali ke atas (exit)",
-                    "🚗 15.30 — Perjalanan kembali ke Malang",
-                    "🏠 17.00–18.00 — Tiba di Malang / titik awal"
+                    "06.00 - 06.30 - Penjemputan Peserta di Meeting Point",
+                    "06.30 - 08.00 - Perjalanan menuju Air Terjun Tumpak Sewu",
+                    "08.00 - 08.30 - Enjoy panorama Tumpak Sewu (sesi foto)",
+                    "08.30 - 10.15 - Trekking menuju dasar Air Terjun",
+                    "10.15 - 11.00 - Menikmati Tumpak Sewu dari bawah (sesi foto)",
+                    "11.00 - 12.30 - Explore Telaga Nirwana & Goa Tetes",
+                    "12.30 - 13.30 - Trekking kembali ke area parkir",
+                    "13.30 - 14.30 - Bersih diri dan istirahat",
+                    "14.40 - 16.30 - Perjalanan kembali ke Meeting Point Malang"
                 ],
                 en: [
-                    "🌅 06:30–07:00 — Pick up in Malang / City area",
-                    "🚗 08:00–09:00 — Drive to Pronojiwo, Lumajang",
-                    "🥾 09:30 — Arrive, registration & safety briefing",
-                    "🌿 10:00 — Begin trekking down to Tumpak Sewu valley",
-                    "💧 11:00 — Arrive under the waterfall, swim & photo session",
-                    "🏔️ 12:00 — Trek to Goa Tetes (optional)",
-                    "🍽️ 13:00–14:00 — Lunch at local warungs",
-                    "🚶 14:30 — Trek back up (exit)",
-                    "🚗 15:30 — Return drive to Malang",
-                    "🏠 17:00–18:00 — Arrive in Malang / start point"
+                    "06:00 - 06:30 - Pick up at Meeting Point",
+                    "06:30 - 08:00 - Drive to Tumpak Sewu Waterfall",
+                    "08:00 - 08:30 - Enjoy Tumpak Sewu panorama (photo session)",
+                    "08:30 - 10:15 - Trek down to the base of the waterfall",
+                    "10:15 - 11:00 - Enjoy Tumpak Sewu from below (photo session)",
+                    "11:00 - 12:30 - Explore Telaga Nirwana & Goa Tetes",
+                    "12:30 - 13:30 - Trek back to parking area",
+                    "13:30 - 14:30 - Clean up & rest",
+                    "14:40 - 16:30 - Return journey to Meeting Point Malang"
                 ]
             },
             priceTable: [
-                { pax: "2 Pax", armada: "Avanza / Xenia", price: "Rp 475.000/orang" },
-                { pax: "3 Pax", armada: "Avanza / Xenia", price: "Rp 375.000/orang" },
-                { pax: "4 Pax", armada: "Avanza / Xenia", price: "Rp 300.000/orang" },
-                { pax: "5–6 Pax", armada: "Hiace / Avanza", price: "Rp 275.000/orang" },
-                { pax: "7–10 Pax", armada: "Hiace Commuter", price: "Rp 250.000/orang" },
-                { pax: "11–14 Pax", armada: "Hiace Premio / ELF", price: "Rp 225.000/orang" },
-                { pax: "15–19 Pax", armada: "Hiace Premio / ELF", price: "Rp 200.000/orang" },
-                { pax: "20–25 Pax", armada: "Bus Medium", price: "Rp 175.000/orang" },
+                { pax: "2", armada: "Avanza", price: "Rp 685.000" },
+                { pax: "3", armada: "Avanza", price: "Rp 470.000" },
+                { pax: "4", armada: "Avanza", price: "Rp 360.000" },
+                { pax: "5", armada: "Avanza", price: "Rp 300.000" },
+                { pax: "6", armada: "Innova", price: "Rp 280.000" },
+                { pax: "7", armada: "Hiace", price: "Rp 290.000" },
+                { pax: "8", armada: "Hiace", price: "Rp 260.000" },
+                { pax: "9", armada: "Hiace", price: "Rp 235.000" },
+                { pax: "10", armada: "Hiace", price: "Rp 220.000" },
+                { pax: "11", armada: "Hiace", price: "Rp 205.000" },
+                { pax: "12", armada: "Hiace", price: "Rp 195.000" },
+                { pax: "13", armada: "Hiace", price: "Rp 195.000" }
             ],
+            priceTableTitle: "Paket Dokumentasi foto & video penjemputan area Kota Malang",
+            priceTableNote: "Harga tsb adalah harga per orang atau per pax dan Harga dapat berubah sewaktu-waktu mengikuti kebijakan pengelola wisata Air terjun tumpak sewu.",
             tripInfo: [
-                "📍 Meeting Point: Area Malang Kota (by request)",
-                "⏱️ Durasi: ±10–12 jam (day trip)",
-                "🗓️ Tersedia: Setiap hari (by request)",
-                "👥 Min. Peserta: 2 orang",
-                "📞 Booking: Min. H-1 sebelum keberangkatan",
-                "⛰️ Level Trekking: Menengah (ada turunan curam & tangga)"
+                "Meeting Point: Area Kota Malang (Hotel, stasiun, dll)",
+                "Aktivitas Fisik: Level 7 (moderate / active)",
+                "Durasi Trekking: 45-60 menit",
+                "Jarak Track: 2 Kilometer",
+                "Min. Peserta: 2 orang",
+                "Booking: Min. H-1 sebelum keberangkatan"
             ],
             include: [
-                "🚗 Transportasi PP (AC & WiFi)",
-                "👨‍✈️ Driver berpengalaman",
-                "🗺️ Trip Organizer / Guide lokal",
-                "💧 Air mineral selama perjalanan",
-                "🎫 Tiket masuk Tumpak Sewu",
-                "🅿️ Biaya parkir",
-                "🧴 Safety briefing"
+                "Penjemputan PP (Driver, bbm, ac)",
+                "Armada (Avanza, Innova, Hiace)",
+                "Tiket masuk Wisata",
+                "Friendly Guide as Photographer",
+                "Dokumentasi foto unlimited",
+                "So edit foto",
+                "1 video reels cinematic",
+                "Mineral water 600ml"
             ],
             exclude: [
-                "🍽️ Makan siang (ditanggung sendiri)",
-                "👟 Sewa sepatu anti-slip (optional, ±Rp 15.000)",
-                "🏔️ Tiket Goa Tetes (jika dikunjungi, ±Rp 5.000)",
-                "📷 Dokumentasi/foto profesional",
-                "🏨 Akomodasi (jika menginap)",
-                "💡 Pengeluaran pribadi"
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Akomodasi (jika menginap)"
             ],
             extraCharges: [
-                "👟 Sewa sandal/sepatu anti-slip: Rp 15.000–25.000",
-                "🚁 Pemandu ekstra (untuk grup ≥15 orang): by request",
-                "🏔️ Goa Tetes: Rp 5.000/orang (optional)"
+                "High Season: +Rp 50.000/pax",
+                "Foreign Tourist: +Rp 140.000/pax",
+                "Cinematic Video: +Rp 300.000/Group",
+                "Transport Innova: +Rp 200.000/Group",
+                "Drone Video: +Rp 1.000.000/Group",
+                "Sunset Pronojiwo: +Rp 350.000/Group",
+                "Pickup Kota Batu: +Rp 150.000/Group"
             ],
-            price: "Mulai Rp 175.000 / orang"
+            mustBring: [
+                "Handuk / Towel",
+                "Uang cash",
+                "Sepatu waterproof / sandal",
+                "Pakaian ganti"
+            ],
+            price: "Mulai Rp 195.000 / orang"
         },
+
         {
             title: "Private Trip Banyuwangi",
             desc: {
@@ -491,6 +511,8 @@ if (document.getElementById("detail-title")) {
     const priceTableBody = document.getElementById("price-table-body");
     if (data.priceTable && data.priceTable.length > 0 && priceTableSection && priceTableBody) {
         priceTableSection.style.display = "";
+        const titleEl = document.getElementById("price-table-title");
+        if (titleEl && data.priceTableTitle) titleEl.textContent = data.priceTableTitle;
         data.priceTable.forEach(row => {
             const tr = document.createElement("tr");
             tr.innerHTML = `
@@ -500,6 +522,8 @@ if (document.getElementById("detail-title")) {
             `;
             priceTableBody.appendChild(tr);
         });
+        const noteEl = document.getElementById("price-table-note");
+        if (noteEl && data.priceTableNote) noteEl.textContent = data.priceTableNote;
     }
 
     // === TRIP INFO ===
@@ -545,6 +569,18 @@ if (document.getElementById("detail-title")) {
             const li = document.createElement("li");
             li.textContent = item;
             extraList.appendChild(li);
+        });
+    }
+
+    // === MUST BRING ===
+    const mustBringSection = document.getElementById("must-bring-section");
+    const mustBringList = document.getElementById("must-bring-list");
+    if (data.mustBring && data.mustBring.length > 0 && mustBringSection && mustBringList) {
+        mustBringSection.style.display = "";
+        data.mustBring.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            mustBringList.appendChild(li);
         });
     }
 
