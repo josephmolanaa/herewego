@@ -924,3 +924,126 @@ footer {
     width: 22px;
     height: 22px;
 }
+
+/* ============ DESTINATIONS TAGS ============ */
+.destinations-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+.dest-tag {
+    background: rgba(33, 158, 188, 0.15);
+    border: 1px solid rgba(33, 158, 188, 0.35);
+    color: #8ECAE6;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* ============ PACKAGE BOXES ============ */
+.pkg-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+.pkg-badge {
+    background: linear-gradient(135deg, #219EBC, #023047);
+    color: #fff;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.pkg-subtitle {
+    color: #8ECAE6;
+    font-size: 0.88rem;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.pkg-unit-title {
+    color: #fdfaf6;
+    font-size: 0.88rem;
+    margin: 0 0 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 500;
+}
+.pkg-note {
+    color: rgba(253, 250, 246, 0.6);
+    font-size: 0.8rem;
+    margin: 10px 0 14px;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-style: italic;
+    line-height: 1.5;
+}
+.pkg-notes {
+    list-style: none;
+    padding: 10px 14px;
+    margin: 12px 0 14px;
+    background: rgba(251, 133, 0, 0.07);
+    border-left: 3px solid #FB8500;
+    border-radius: 0 8px 8px 0;
+}
+.pkg-notes li {
+    color: rgba(253, 250, 246, 0.8);
+    font-size: 0.82rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    padding: 3px 0;
+    line-height: 1.5;
+}
+.pkg-book-btn {
+    margin-top: 14px;
+    width: 100%;
+    justify-content: center;
+}
+.jeep-group-cell {
+    background: rgba(33, 158, 188, 0.12);
+    color: #8ECAE6;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ============ BROMO CLOSURE GRID ============ */
+.bromo-closure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 8px;
+}
+.closure-card {
+    background: rgba(33, 158, 188, 0.1);
+    border: 1px solid rgba(33, 158, 188, 0.25);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.closure-dates {
+    color: #FFB703;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.closure-reason {
+    color: rgba(253, 250, 246, 0.75);
+    font-size: 0.78rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.4;
+}
+@media (max-width: 600px) {
+    .pkg-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .bromo-closure-grid { grid-template-columns: 1fr 1fr; }
+    .dest-tag { font-size: 0.78rem; padding: 5px 11px; }
+}
