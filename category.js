@@ -123,24 +123,8 @@ const categoryData = {
             en: "Comfortable journey with the best fleet to all destinations."
         },
         waText: "Halo%20HereWeGo!%20Saya%20ingin%20tanya%20informasi%20Transport%20Travel.%20Bisa%20bantu%3F",
-        tours: [
-            {
-                title: "Innova Reborn",
-                img: "https://picsum.photos/400/300?random=30",
-                price: "Rp 800.000 / Hari",
-                from: null,
-                badge: null,
-                link: "detail.html?dest=TransportTravelDetail&tour=0"
-            },
-            {
-                title: "Hiace Commuter",
-                img: "https://picsum.photos/400/300?random=31",
-                price: "Rp 1.200.000 / Hari",
-                from: null,
-                badge: null,
-                link: "detail.html?dest=TransportTravelDetail&tour=1"
-            },
-        ]
+        isFleet: true,
+        tours: []
     },
 
     OpenTrip: {
@@ -193,34 +177,42 @@ if (selected) {
         waLink.href = `https://wa.me/6285185636301?text=${selected.waText}`;
     }
 
-    // Render kartu tour
+    // Render kartu tour / fleet
     const grid = document.getElementById("tour-grid");
-    selected.tours.forEach(tour => {
-        const card = document.createElement("a");
-        card.href = tour.link;
-        card.classList.add("tour-card");
 
-        let badgeHtml = "";
-        if (tour.badge) {
-            badgeHtml = `<span class="badge">${tour.badge[lang] || tour.badge.id}</span>`;
-        }
+    if (selected.isFleet && typeof renderArmada === 'function') {
+        // Untuk Transport Travel: pakai fleet cards dari armada.js
+        grid.classList.remove('tour-grid');
+        grid.classList.add('fleet-grid');
+        renderArmada('tour-grid');
+    } else {
+        selected.tours.forEach(tour => {
+            const card = document.createElement("a");
+            card.href = tour.link;
+            card.classList.add("tour-card");
 
-        let fromText = "";
-        if (tour.from) {
-            fromText = tour.from[lang] || "";
-        }
+            let badgeHtml = "";
+            if (tour.badge) {
+                badgeHtml = `<span class="badge">${tour.badge[lang] || tour.badge.id}</span>`;
+            }
 
-        card.innerHTML = `
-            ${badgeHtml}
-            <img src="${tour.img}" alt="${tour.title}" loading="lazy">
-            <div class="tour-info">
-                <h3>${tour.title}</h3>
-                <p class="price">${fromText}${tour.price}</p>
-            </div>
-        `;
+            let fromText = "";
+            if (tour.from) {
+                fromText = tour.from[lang] || "";
+            }
 
-        grid.appendChild(card);
-    });
+            card.innerHTML = `
+                ${badgeHtml}
+                <img src="${tour.img}" alt="${tour.title}" loading="lazy">
+                <div class="tour-info">
+                    <h3>${tour.title}</h3>
+                    <p class="price">${fromText}${tour.price}</p>
+                </div>
+            `;
+
+            grid.appendChild(card);
+        });
+    }
 
 } else {
     // Kategori tidak dikenali
