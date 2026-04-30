@@ -41,7 +41,7 @@ const armadaData = [
     },
     {
         name: "INNOVA REBORN",
-        img: "IMAGES/innova.png",
+        img: "IMAGES/innova_reborn.png",
         seats: 7,
         priceFullDay: "Rp 700.000",
         price12Jam: "Rp 600.000",
