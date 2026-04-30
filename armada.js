@@ -112,6 +112,11 @@ function renderArmada(containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = armadaData.map(buildFleetCard).join("");
+    
+    // Ensure cards are visible (fixes issue where dynamic .fade cards stay hidden)
+    setTimeout(() => {
+        container.querySelectorAll('.fade').forEach(el => el.classList.add('show'));
+    }, 100);
 }
 
 // Auto-render jika ada elemen #fleet-grid di halaman
