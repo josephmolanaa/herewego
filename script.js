@@ -25,27 +25,15 @@ faders.forEach(el => observer.observe(el));
 // SMOOTH SCROLL
 document.querySelectorAll("a[href^='#']").forEach(a => {
     a.addEventListener("click", e => {
+        const target = document.querySelector(a.getAttribute("href"));
+        if (!target) return;
+
         e.preventDefault();
-        document.querySelector(a.getAttribute("href")).scrollIntoView({
+        target.scrollIntoView({
             behavior: "smooth"
         });
     });
 });
-
-// HERO SLIDESHOW SUPER SMOOTH
-let heroIndex = 0;
-const heroSlides = document.querySelectorAll(".hero-slide");
-
-function changeHeroSlide() {
-    heroSlides.forEach(s => s.classList.remove("active"));
-
-    heroIndex = (heroIndex + 1) % heroSlides.length;
-
-    heroSlides[heroIndex].classList.add("active");
-}
-
-// 7 detik sudah sinkron dengan animasi CSS
-setInterval(changeHeroSlide, 7000);
 
 // PRELOADER / LOADING SCREEN
 window.addEventListener("DOMContentLoaded", () => {
@@ -59,26 +47,39 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // HERO SLIDESHOW - AUTO + MANUAL ARROW
+let heroIndex = 0;
+const heroSlides = document.querySelectorAll(".hero-slide");
 const totalSlides = heroSlides.length;
+let autoSlideInterval = null;
 
-// Fungsi tampilkan slide
 function showSlide(index) {
+    if (!totalSlides) return;
+
     heroSlides.forEach(slide => slide.classList.remove("active"));
     heroSlides[index].classList.add("active");
+    updateDots();
 }
 
 function nextSlide() {
+    if (!totalSlides) return;
+
     heroIndex = (heroIndex + 1) % totalSlides;
     showSlide(heroIndex);
 }
 
 function prevSlide() {
+    if (!totalSlides) return;
+
     heroIndex = (heroIndex - 1 + totalSlides) % totalSlides;
     showSlide(heroIndex);
 }
 
-// Auto slideshow setiap 7 detik
-let autoSlideInterval = setInterval(nextSlide, 7000);
+function resetAutoTimer() {
+    if (autoSlideInterval) clearInterval(autoSlideInterval);
+    if (totalSlides > 1) {
+        autoSlideInterval = setInterval(nextSlide, 7000);
+    }
+}
 
 // Manual control dengan arrow
 const leftArrow = document.querySelector(".left-arrow");
@@ -87,22 +88,16 @@ const rightArrow = document.querySelector(".right-arrow");
 if (rightArrow) {
     rightArrow.addEventListener("click", () => {
         nextSlide();
-        // Reset timer auto biar nggak ganti tiba-tiba
-        clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 7000);
+        resetAutoTimer();
     });
 }
 
 if (leftArrow) {
     leftArrow.addEventListener("click", () => {
         prevSlide();
-        clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 7000);
+        resetAutoTimer();
     });
 }
-
-// Tampilkan slide pertama saat load
-showSlide(heroIndex);
 
 // MOBILE HAMBURGER MENU TOGGLE
 const hamburger = document.querySelector(".hamburger");
@@ -129,20 +124,19 @@ if (hamburger && navMenu) {
 const dotsContainer = document.querySelector(".hero-dots");
 
 // Generate dots otomatis berdasarkan jumlah slide
-heroSlides.forEach((_, i) => {
-    const dot = document.createElement("div");
-    dot.classList.add("hero-dot");
-    if (i === heroIndex) dot.classList.add("active");
-    dot.addEventListener("click", () => {
-        heroIndex = i;
-        showSlide(heroIndex);
-        updateDots();
-        // Reset auto timer
-        clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 7000);
+if (dotsContainer) {
+    heroSlides.forEach((_, i) => {
+        const dot = document.createElement("div");
+        dot.classList.add("hero-dot");
+        if (i === heroIndex) dot.classList.add("active");
+        dot.addEventListener("click", () => {
+            heroIndex = i;
+            showSlide(heroIndex);
+            resetAutoTimer();
+        });
+        dotsContainer.appendChild(dot);
     });
-    dotsContainer.appendChild(dot);
-});
+}
 
 // Update active dot
 function updateDots() {
@@ -151,26 +145,9 @@ function updateDots() {
     });
 }
 
-// Panggil updateDots setiap ganti slide
-function showSlide(index) {
-    heroSlides.forEach(slide => slide.classList.remove("active"));
-    heroSlides[index].classList.add("active");
-    updateDots();
-}
-
-// Di nextSlide & prevSlide juga panggil updateDots()
-function nextSlide() {
-    heroIndex = (heroIndex + 1) % totalSlides;
-    showSlide(heroIndex);
-}
-
-function prevSlide() {
-    heroIndex = (heroIndex - 1 + totalSlides) % totalSlides;
-    showSlide(heroIndex);
-}
-
 // Initial
-updateDots();
+showSlide(heroIndex);
+resetAutoTimer();
 
 // TOUCH SWIPE FOR MOBILE HERO SLIDESHOW
 let touchStartX = 0;
@@ -178,14 +155,16 @@ let touchEndX = 0;
 const swipeThreshold = 50; 
 const heroSection = document.querySelector(".hero");
 
-heroSection.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-}, { passive: true });
+if (heroSection) {
+    heroSection.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
 
-heroSection.addEventListener("touchend", (e) => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-}, { passive: true });
+    heroSection.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+}
 
 function handleSwipe() {
     if (touchEndX < touchStartX - swipeThreshold) {
@@ -196,11 +175,6 @@ function handleSwipe() {
         prevSlide();
         resetAutoTimer();
     }
-}
-
-function resetAutoTimer() {
-    clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(nextSlide, 7000);
 }
 
 // GALLERY SCROLL ARROWS (DESKTOP)

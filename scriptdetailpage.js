@@ -142,7 +142,7 @@ const tourData = {
                         { type: "Long Jeep", capacity: "6 - 10 orang", price: "Rp 1.800.000" }
                     ],
                     notes: [
-                        "Harga tersebut hanya untuk Jeep, bbm, driver dan shuttle (penjemputan di area Kota Malang)",
+                        "Harga tersebut hanya untuk Jeep, BBM, Driver dan Shuttle (Penjemputan di area Kota Malang)",
                         "Tidak termasuk Tiket TNBTS dan Dokumentasi.",
                         "Datang langsung ke Basecamp (Tumpang) potongan Rp 200.000 dari harga normal."
                     ]
@@ -274,12 +274,12 @@ const tourData = {
                 "Booking: Min. H-1 sebelum keberangkatan"
             ],
             include: [
-                "Penjemputan PP (Driver, bbm, ac)",
+                "Penjemputan PP (Driver, BBM, AC)",
                 "Armada (Avanza, Innova, Hiace)",
                 "Tiket masuk Wisata",
                 "Friendly Guide as Photographer",
                 "Dokumentasi foto unlimited",
-                "So edit foto",
+                "Edit foto",
                 "1 video reels cinematic",
                 "Mineral water 600ml"
             ],
@@ -444,31 +444,335 @@ const tourData = {
 
     OpenTripDetail: [
         {
-            title: "Open Trip 1",
+            title: "Open Trip Bromo",
             desc: {
-                id: "Bergabung bersama traveler lain dengan harga terjangkau dan pengalaman seru!",
-                en: "Join other travelers at affordable prices for thrilling experiences!"
+                id: "Bergabung bersama traveler lain untuk menikmati keindahan Gunung Bromo dengan harga terjangkau! Saksikan sunrise spektakuler, lautan pasir, dan kawah aktif Bromo.",
+                en: "Join other travelers to enjoy the beauty of Mount Bromo at affordable prices! Witness a spectacular sunrise, the sea of sand, and Bromo's active crater."
             },
-            img: "https://picsum.photos/400/300?random=40",
+            img: "https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=600&h=400&fit=crop",
+            destinations: [
+                "Sunrise Point", "Bukit Widodaren", "Kawah Bromo",
+                "Gunung Batok", "Pura Luhur Poten", "Savanna",
+                "Lautan Pasir"
+            ],
             itinerary: {
-                id: ["Meeting point pagi hari", "Kunjungan destinasi 1", "Makan siang", "Kunjungan destinasi 2", "Kembali sore hari"],
-                en: ["Morning meeting point", "Visit destination 1", "Lunch break", "Visit destination 2", "Return in the afternoon"]
+                id: [
+                    "00.00 - 01.00 - Penjemputan peserta di Meeting Point",
+                    "01.00 - 02.00 - Perjalanan menuju basecamp jeep",
+                    "02.00 - 03.30 - Perjalanan menuju Sunrise Point",
+                    "03.30 - 06.00 - Menikmati sunrise (sesi foto)",
+                    "06.00 - 07.00 - Explore Bukit Widodaren & Gunung Batok",
+                    "07.00 - 08.00 - Explore Kawah Bromo & Pura Luhur Poten",
+                    "08.00 - 09.30 - Explore Savanna & Lautan Pasir",
+                    "09.30 - 10.30 - Perjalanan pulang, kembali ke Meeting Point"
+                ],
+                en: [
+                    "00:00 - 01:00 - Pick up at Meeting Point",
+                    "01:00 - 02:00 - Drive to jeep basecamp",
+                    "02:00 - 03:30 - Drive to Sunrise Point",
+                    "03:30 - 06:00 - Enjoy sunrise (photo session)",
+                    "06:00 - 07:00 - Explore Bukit Widodaren & Gunung Batok",
+                    "07:00 - 08:00 - Explore Bromo Crater & Pura Luhur Poten",
+                    "08:00 - 09:30 - Explore Savanna & Sea of Sand",
+                    "09:30 - 10:30 - Return journey to Meeting Point"
+                ]
             },
-            price: "Rp 9.999 / orang"
+            tripInfo: [
+                "Meeting Point: Area Kota Malang (Hotel, stasiun, dll)",
+                "Jadwal: Setiap Sabtu & Minggu",
+                "Aktivitas Fisik: Level 4 (easy & relaxed)",
+                "Durasi: 10-12 jam (midnight trip)"
+            ],
+            include: [
+                "Penjemputan PP (Driver, BBM, AC)",
+                "Armada (Avanza, Innova, Hiace)",
+                "Tiket masuk wisata",
+                "Friendly Guide as Photographer",
+                "Dokumentasi foto unlimited",
+                "Edit foto setiap peserta",
+                "Air mineral 600ml"
+            ],
+            exclude: [
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi"
+            ],
+            price: "Rp 300.000 / orang"
         },
         {
-            title: "Open Trip 2",
+            title: "Open Trip Tumpak Sewu",
             desc: {
-                id: "Open trip eksklusif ke destinasi tersembunyi dengan kuota terbatas.",
-                en: "Exclusive open trip to hidden destinations with limited spots."
+                id: "Special Promo! Bergabung bersama traveler lain untuk menikmati keajaiban Air Terjun Tumpak Sewu — salah satu air terjun terindah di Indonesia. Nikmati panorama air terjun tirai, trekking seru, eksplorasi Goa Tetes, dan Telaga Nirwana.",
+                en: "Special Promo! Join fellow travelers to experience the magic of Tumpak Sewu Waterfall — one of the most beautiful waterfalls in Indonesia. Enjoy the panoramic curtain waterfall, exciting trekking, explore Goa Tetes, and Telaga Nirwana."
             },
-            img: "https://picsum.photos/400/300?random=41",
+            img: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=600&h=400&fit=crop",
+            destinations: [
+                "Panorama Tumpaksewu",
+                "Goa Tetes",
+                "Air Terjun Tumpaksewu",
+                "Telaga Nirwana",
+                "Sunset Pronojiwo / Teras Semeru (opsional)"
+            ],
             itinerary: {
-                id: ["Keberangkatan subuh", "Perjalanan ke destinasi", "Eksplorasi bebas", "Foto session", "Kembali malam hari"],
-                en: ["Early dawn departure", "Journey to destination", "Free exploration", "Photo session", "Return late night"]
+                id: [
+                    "06.00 - 06.30 - Penjemputan peserta di Meeting Point",
+                    "06.30 - 08.00 - Perjalanan menuju Air Terjun Tumpak Sewu",
+                    "08.00 - 08.30 - Enjoy panorama Tumpak Sewu (sesi foto)",
+                    "08.30 - 10.15 - Trekking menuju dasar Air Terjun",
+                    "10.15 - 11.00 - Menikmati Tumpak Sewu dari bawah (sesi foto)",
+                    "11.00 - 12.30 - Explore Telaga Nirwana & Goa Tetes",
+                    "12.30 - 13.30 - Trekking kembali ke area parkir",
+                    "13.30 - 14.30 - Bersih diri dan istirahat",
+                    "14.40 - 16.30 - Perjalanan kembali ke Meeting Point Malang"
+                ],
+                en: [
+                    "06:00 - 06:30 - Pick up at Meeting Point",
+                    "06:30 - 08:00 - Drive to Tumpak Sewu Waterfall",
+                    "08:00 - 08:30 - Enjoy Tumpak Sewu panorama (photo session)",
+                    "08:30 - 10:15 - Trek down to the base of the waterfall",
+                    "10:15 - 11:00 - Enjoy Tumpak Sewu from below (photo session)",
+                    "11:00 - 12:30 - Explore Telaga Nirwana & Goa Tetes",
+                    "12:30 - 13:30 - Trek back to parking area",
+                    "13:30 - 14:30 - Clean up & rest",
+                    "14:40 - 16:30 - Return journey to Meeting Point Malang"
+                ]
             },
-            price: "Rp 9.999 / orang"
+            tripInfo: [
+                "Meeting Point: Area Kota Malang (Hotel, stasiun, dll)",
+                "Jadwal: Setiap Sabtu & Minggu",
+                "Aktivitas Fisik: Level 7 (active)",
+                "Durasi Trekking: 45-60 menit",
+                "Jarak Track: 2 Kilometer"
+            ],
+            include: [
+                "Penjemputan PP (Driver, BBM, AC)",
+                "Armada (Avanza, Innova, Hiace)",
+                "Tiket masuk wisata",
+                "Friendly Guide as Photographer",
+                "Dokumentasi foto unlimited",
+                "Edit foto setiap peserta",
+                "Air mineral 600ml"
+            ],
+            exclude: [
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi"
+            ],
+            mustBring: [
+                "Handuk / Towel",
+                "Uang cash",
+                "Sepatu waterproof / sandal",
+                "Pakaian ganti"
+            ],
+            price: "Rp 355.000 / orang"
         },
+    ],
+
+    FleetDetail: [
+        {
+            title: "Hiace Commuter",
+            desc: {
+                id: "Hiace Commuter dengan kapasitas 14 kursi, cocok untuk rombongan besar. Nikmati perjalanan nyaman dengan AC dan suspensi empuk untuk trip jarak jauh maupun dekat.",
+                en: "Hiace Commuter with 14-seat capacity, perfect for large groups. Enjoy a comfortable journey with AC and smooth suspension for both long and short trips."
+            },
+            img: "IMAGES/hiace_commuter.png",
+            fleetImages: ["IMAGES/hiace_commuter.png", "IMAGES/hiace_commuter_front.png", "IMAGES/hiace_commuter_angle.png"],
+            tripInfo: [
+                "Max 14 Seat",
+                "Full Day: Rp 800.000 /day",
+                "12 Jam: Rp 700.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 800.000 / day"
+        },
+        {
+            title: "Hiace Premio",
+            desc: {
+                id: "Hiace Premio premium dengan 14 kursi ekstra nyaman, interior mewah, dilengkapi TV dan karaoke. Pilihan ideal untuk perjalanan korporat dan rombongan VIP.",
+                en: "Premium Hiace Premio with 14 extra-comfortable seats, luxurious interior, equipped with TV and karaoke. Ideal choice for corporate travel and VIP groups."
+            },
+            img: "IMAGES/hiace_premio.png",
+            fleetImages: ["IMAGES/hiace_premio.png", "IMAGES/hiace_premio_front.png", "IMAGES/hiace_premio_angle.png"],
+            tripInfo: [
+                "Max 14 Seat",
+                "Full Day: Rp 1.400.000 /day",
+                "12 Jam: Rp 1.200.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Entertaiment (TV, Karaoke)"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 1.400.000 / day"
+        },
+        {
+            title: "Toyota Avanza",
+            desc: {
+                id: "Avanza New dengan kapasitas max 6 kursi. Kendaraan compact yang handal untuk trip keluarga atau rombongan kecil ke berbagai destinasi wisata di Jawa Timur.",
+                en: "New Avanza with max 6-seat capacity. A reliable compact vehicle for family trips or small groups to various tourist destinations in East Java."
+            },
+            img: "IMAGES/avanza.png",
+            fleetImages: ["IMAGES/avanza.png", "IMAGES/avanza_front.png"],
+            tripInfo: [
+                "Max 6 Seat",
+                "Full Day: Rp 700.000 /day",
+                "12 Jam: Rp 400.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 700.000 / day"
+        },
+        {
+            title: "Innova Reborn",
+            desc: {
+                id: "Innova Reborn dengan kapasitas max 6 kursi, kabin luas dan nyaman. Kendaraan favorit untuk perjalanan wisata dan bisnis dengan tingkat kenyamanan premium.",
+                en: "Innova Reborn with max 6-seat capacity, spacious cabin, and premium comfort level. A favorite vehicle for both tourism and business travel."
+            },
+            img: "IMAGES/innova_reborn.png",
+            tripInfo: [
+                "Max 6 Seat",
+                "Full Day: Rp 800.000 /day",
+                "12 Jam: Rp 600.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 800.000 / day"
+        },
+        {
+            title: "Elf Long",
+            desc: {
+                id: "Elf Long dengan kapasitas 18 kursi, ideal untuk rombongan besar, gathering, dan corporate trip. Kabin luas dengan AC full untuk perjalanan nyaman.",
+                en: "Elf Long with 18-seat capacity, ideal for large groups, gatherings, and corporate trips. Spacious cabin with full AC for a comfortable journey."
+            },
+            img: "IMAGES/elf_long.png",
+            tripInfo: [
+                "Max 18 Seat",
+                "Full Day: Rp 1.300.000 /day",
+                "12 Jam: Rp 1.200.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 1.300.000 / day"
+        },
+        {
+            title: "Fortuner",
+            desc: {
+                id: "Toyota Fortuner premium 5 kursi untuk perjalanan eksekutif dan VIP. Kendaraan SUV tangguh dengan interior mewah, cocok untuk medan apapun.",
+                en: "Premium Toyota Fortuner with 5 seats for executive and VIP travel. A tough SUV with luxurious interior, suitable for any terrain."
+            },
+            img: "IMAGES/fortuner.png",
+            tripInfo: [
+                "Max 5 Seat",
+                "Full Day: Rp 1.500.000 /day",
+                "12 Jam: Rp 1.400.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 1.500.000 / day"
+        },
+        {
+            title: "Innova Zenix",
+            desc: {
+                id: "Innova Zenix premium dengan kapasitas max 6 kursi. SUV hybrid terbaru dari Toyota dengan desain modern, fitur canggih, dan kenyamanan kelas atas untuk perjalanan eksklusif.",
+                en: "Premium Innova Zenix with max 6-seat capacity. Toyota's latest hybrid SUV featuring modern design, advanced features, and top-class comfort for exclusive journeys."
+            },
+            img: "IMAGES/innova_zenix.png",
+            tripInfo: [
+                "Max 6 Seat",
+                "Full Day: Rp 1.300.000 /day",
+                "12 Jam: Rp 1.100.000 /day",
+                "Area Pickup: Airport / Station / Hotel"
+            ],
+            include: [
+                "Driver as a guide",
+                "BBM / Fuel Tank",
+                "Sterilize every car",
+                "Pickup Airport/Station/Hotel",
+                "Mineral Water"
+            ],
+            exclude: [
+                "Tiket masuk wisata",
+                "Makan (ditanggung sendiri)",
+                "Pengeluaran pribadi",
+                "Overtime charge"
+            ],
+            fleetTagline: "Let's make your journey comfort and ease with us!",
+            price: "Rp 1.300.000 / day"
+        }
     ]
 };
 
@@ -496,15 +800,101 @@ if (document.getElementById("detail-title")) {
     const heroPriceEl = document.getElementById("detail-price-hero");
     if (heroPriceEl) heroPriceEl.textContent = data.price;
 
+    // === FLEET-SPECIFIC: Add vehicle-centric hero styling ===
+    if (data.fleetTagline) {
+        const detailHero = document.querySelector('.detail-hero');
+        const heroImg = document.getElementById("detail-img");
+        const heroOverlay = document.querySelector('.hero-overlay');
+
+        if (detailHero) {
+            detailHero.classList.add('fleet-hero');
+            detailHero.style.height = '70vh';
+            detailHero.style.minHeight = '450px';
+            detailHero.style.background = 'linear-gradient(135deg, #023047 0%, #0a5578 40%, #023047 100%)';
+        }
+
+        // === FLEET SLIDESHOW: Multiple angles ===
+        if (data.fleetImages && data.fleetImages.length > 1) {
+            const heroImg = document.getElementById("detail-img");
+            if (heroImg) {
+                // Style the initial image
+                heroImg.style.objectFit = "contain";
+                heroImg.style.objectPosition = "center right";
+                heroImg.style.padding = "50px 30px 50px 35%";
+                heroImg.style.background = "transparent";
+                heroImg.style.transition = "opacity 1.2s ease-in-out";
+                heroImg.style.zIndex = "2";
+
+                // Create additional slide images
+                const heroParent = heroImg.parentElement;
+                const slideImgs = [heroImg];
+
+                data.fleetImages.slice(1).forEach((imgSrc, i) => {
+                    const newImg = document.createElement("img");
+                    newImg.src = imgSrc;
+                    newImg.alt = data.title;
+                    newImg.className = "hero-img fleet-slide-img";
+                    newImg.style.objectFit = "contain";
+                    newImg.style.objectPosition = "center right";
+                    newImg.style.padding = "50px 30px 50px 35%";
+                    newImg.style.background = "transparent";
+                    newImg.style.transition = "opacity 1.2s ease-in-out";
+                    newImg.style.opacity = "0";
+                    newImg.style.zIndex = "2";
+                    heroParent.insertBefore(newImg, heroImg.nextSibling);
+                    slideImgs.push(newImg);
+                });
+
+                // Auto-rotate slides
+                let currentSlide = 0;
+                setInterval(() => {
+                    slideImgs[currentSlide].style.opacity = "0";
+                    currentSlide = (currentSlide + 1) % slideImgs.length;
+                    slideImgs[currentSlide].style.opacity = "1";
+                }, 4000);
+            }
+        } else {
+            const heroImg = document.getElementById("detail-img");
+            if (heroImg) {
+                heroImg.style.objectFit = "contain";
+                heroImg.style.objectPosition = "center right";
+                heroImg.style.padding = "50px 30px 50px 35%";
+                heroImg.style.background = "transparent";
+            }
+        }
+        if (heroOverlay) {
+            heroOverlay.style.background = "linear-gradient(to right, rgba(2,48,71,0.95) 0%, rgba(2,48,71,0.75) 35%, rgba(2,48,71,0.15) 65%, transparent 100%)";
+        }
+    }
+
+    // === FLEET TAGLINE ===
+    if (data.fleetTagline) {
+        const contentSingle = document.querySelector('.content-single');
+        if (contentSingle) {
+            const taglineDiv = document.createElement('div');
+            taglineDiv.className = 'detail-section fleet-tagline-section';
+            taglineDiv.innerHTML = `
+                <p class="fleet-tagline-text">✨ <em>${data.fleetTagline}</em></p>
+            `;
+            contentSingle.insertBefore(taglineDiv, contentSingle.firstChild);
+        }
+    }
+
     // === ITINERARY ===
+    const itinerarySection = document.getElementById("itinerary-section");
     const itineraryList = document.getElementById("detail-itinerary");
-    itineraryList.innerHTML = "";
-    const itArr = Array.isArray(data.itinerary) ? data.itinerary : (data.itinerary[lang] || data.itinerary.id);
-    itArr.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        itineraryList.appendChild(li);
-    });
+    if (data.itinerary) {
+        itineraryList.innerHTML = "";
+        const itArr = Array.isArray(data.itinerary) ? data.itinerary : (data.itinerary[lang] || data.itinerary.id);
+        itArr.forEach(item => {
+            const li = document.createElement("li");
+            li.textContent = item;
+            itineraryList.appendChild(li);
+        });
+    } else if (itinerarySection) {
+        // Hide itinerary section for fleet/vehicle details
+        itinerarySection.style.display = "none";
+    }
 
     // === PRICE TABLE ===
     const priceTableSection = document.getElementById("price-table-section");

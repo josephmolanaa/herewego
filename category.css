@@ -741,3 +741,28 @@ footer {
     }
 }
 
+/* Fleet button row (Detail + Pesan side by side) */
+.fleet-btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.fleet-btn-row .fleet-btn {
+    flex: 1;
+    margin-top: 0;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+}
+
+.fleet-btn-detail {
+    background: transparent !important;
+    color: #023047 !important;
+    border: 1.5px solid rgba(2, 48, 71, 0.3);
+}
+
+.fleet-btn-detail:hover {
+    background: rgba(2, 48, 71, 0.08) !important;
+    border-color: #023047;
+    box-shadow: 0 4px 15px rgba(2, 48, 71, 0.15) !important;
+}

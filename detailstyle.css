@@ -1098,3 +1098,46 @@ footer {
 @media (max-width: 480px) {
     .must-bring-grid { grid-template-columns: 1fr; }
 }
+/* FLEET DETAIL TAGLINE */
+.fleet-tagline-section {
+    text-align: center;
+    background: rgba(33, 158, 188, 0.08);
+    border-color: rgba(33, 158, 188, 0.2);
+}
+
+.fleet-tagline-text {
+    font-size: 1.15rem;
+    color: #8ECAE6;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.fleet-tagline-text em {
+    font-style: italic;
+    font-weight: 600;
+}
+/* Fleet hero specific styles */
+.fleet-hero .hero-content {
+    top: 50%;
+    max-width: 45%;
+}
+
+.fleet-hero .hero-content p {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .fleet-hero .hero-content {
+        max-width: 100%;
+        top: 0 !important;
+    }
+    .fleet-hero .hero-img {
+        padding: 20px !important;
+        object-position: center !important;
+    }
+}

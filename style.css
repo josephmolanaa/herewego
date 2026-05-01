@@ -1060,6 +1060,32 @@ nav ul li a:hover {
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
 }
 
+/* Fleet button row (Detail + Pesan side by side) */
+.fleet-btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.fleet-btn-row .fleet-btn {
+    flex: 1;
+    margin-top: 0;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+}
+
+.fleet-btn-detail {
+    background: transparent !important;
+    color: #8ECAE6 !important;
+    border: 1.5px solid rgba(142, 202, 230, 0.4);
+}
+
+.fleet-btn-detail:hover {
+    background: rgba(142, 202, 230, 0.12) !important;
+    border-color: #8ECAE6;
+    box-shadow: 0 4px 15px rgba(142, 202, 230, 0.2) !important;
+}
+
 /* Responsive fleet */
 @media (max-width: 1024px) {
     .fleet-grid {

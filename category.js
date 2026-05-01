@@ -146,9 +146,9 @@ const categoryData = {
             {
                 title: "Open Trip Tumpak Sewu",
                 img: "https://picsum.photos/400/300?random=41",
-                price: "Rp 300.000",
+                price: "Rp 355.000",
                 from: null,
-                badge: { id: "PROMO!", en: "PROMO!" },
+                badge: { id: "SPECIAL PROMO!", en: "SPECIAL PROMO!" },
                 link: "detail.html?dest=OpenTripDetail&tour=1"
             },
         ]

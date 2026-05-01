@@ -21,31 +21,67 @@ const armadaData = [
         seats: 14,
         priceFullDay: "Rp 800.000",
         price12Jam: "Rp 700.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Hiace%20Commuter.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        waText: "Saya%20tertarik%20untuk%20sewa%20Hiace%20Commuter.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 0,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel Tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     },
     {
         name: "HIACE PREMIO",
         img: "IMAGES/hiace_premio.png",
         seats: 14,
-        priceFullDay: "Rp 950.000",
-        price12Jam: "Rp 850.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Hiace%20Premio.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        priceFullDay: "Rp 1.400.000",
+        price12Jam: "Rp 1.200.000",
+        waText: "Saya%20tertarik%20untuk%20sewa%20Hiace%20Premio.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 1,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel Tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Entertainment (tv, karaoke)"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     },
     {
         name: "TOYOTA AVANZA",
         img: "IMAGES/avanza.png",
-        seats: 7,
-        priceFullDay: "Rp 500.000",
-        price12Jam: "Rp 450.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Toyota%20Avanza.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        seats: 6,
+        priceFullDay: "Rp 700.000",
+        price12Jam: "Rp 400.000",
+        waText: "Saya%20tertarik%20untuk%20sewa%20Toyota%20Avanza.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 2,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel Tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     },
     {
         name: "INNOVA REBORN",
         img: "IMAGES/innova_reborn.png",
-        seats: 7,
-        priceFullDay: "Rp 700.000",
+        seats: 6,
+        priceFullDay: "Rp 800.000",
         price12Jam: "Rp 600.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Innova%20Reborn.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        waText: "Saya%20tertarik%20untuk%20sewa%20Innova%20Reborn.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 3,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel     Tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     },
     {
         name: "ELF LONG",
@@ -53,7 +89,16 @@ const armadaData = [
         seats: 18,
         priceFullDay: "Rp 1.300.000",
         price12Jam: "Rp 1.200.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Elf%20Long.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        waText: "Saya%20tertarik%20untuk%20sewa%20Elf%20Long.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 4,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     },
     {
         name: "FORTUNER",
@@ -61,7 +106,33 @@ const armadaData = [
         seats: 5,
         priceFullDay: "Rp 1.500.000",
         price12Jam: "Rp 1.400.000",
-        waText: "Saya%20tertarik%20untuk%20sewa%20Fortuner.%20Bisa%20info%20harga%20dan%20ketersediaan%3F"
+        waText: "Saya%20tertarik%20untuk%20sewa%20Fortuner.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 5,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
+    },
+    {
+        name: "INNOVA ZENIX",
+        img: "IMAGES/innova_zenix.png",
+        seats: 6,
+        priceFullDay: "Rp 1.300.000",
+        price12Jam: "Rp 1.100.000",
+        waText: "Saya%20tertarik%20untuk%20sewa%20Innova%20Zenix.%20Bisa%20info%20harga%20dan%20ketersediaan%3F",
+        detailIndex: 6,
+        include: [
+            "Driver as a guide",
+            "BBM / Fuel Tank",
+            "Sterilize every car",
+            "Pickup Airport/Station/Hotel",
+            "Mineral water"
+        ],
+        tagline: "Let's make your journey comfort and ease with us!"
     }
 ];
 
@@ -70,6 +141,7 @@ const armadaData = [
 // ============================================================
 function buildFleetCard(armada) {
     const waHref = `${WA_BASE}?text=Halo%20HereWeGo!%20${armada.waText}`;
+    const detailHref = `detail.html?dest=FleetDetail&tour=${armada.detailIndex}`;
     return `
         <div class="fleet-card fade">
             <div class="fleet-capacity-badge">
@@ -96,10 +168,16 @@ function buildFleetCard(armada) {
                     ${CAR_SVG}
                     Unit, Driver, dan BBM
                 </div>
-                <a href="${waHref}" target="_blank" class="fleet-btn">
-                    ${WA_SVG}
-                    Pesan
-                </a>
+                <div class="fleet-btn-row">
+                    <a href="${detailHref}" class="fleet-btn fleet-btn-detail">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                        Detail
+                    </a>
+                    <a href="${waHref}" target="_blank" class="fleet-btn">
+                        ${WA_SVG}
+                        Pesan
+                    </a>
+                </div>
             </div>
         </div>`;
 }
@@ -112,7 +190,7 @@ function renderArmada(containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
     container.innerHTML = armadaData.map(buildFleetCard).join("");
-    
+
     // Ensure cards are visible (fixes issue where dynamic .fade cards stay hidden)
     setTimeout(() => {
         container.querySelectorAll('.fade').forEach(el => el.classList.add('show'));
